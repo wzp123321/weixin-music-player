@@ -1,0 +1,38 @@
+{
+    "entryPagePath": "pages/home/home",
+    "pages": [
+        "pages/home/home",
+        "pages/user/user",
+        "pages/login/login"
+    ],
+    "tabBar": {
+        "selectedColor": "#35c8fb",
+        "color": "#7f8389",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "发现音乐",
+                "iconPath": "assets/tabbar/chat_list_unselected.png",
+                "selectedIconPath": "assets/tabbar/chat_list.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "我的音乐",
+                "iconPath": "assets/tabbar/friend_unselected.png",
+                "selectedIconPath": "assets/tabbar/friend.png"
+            }
+        ]
+    },
+    "subpackages": [],
+    "usingComponents": {
+        "t-demo": "./components/demo-block/index"
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f6f6f6",
+        "backgroundColor": "#f6f6f6",
+        "navigationBarTitleText": "TDesign",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,11 @@
+<!--pages/home.wxml-->
+<view>
+  <text>home页面</text>
+  <movable-area style="width:100px;height: 100px;">
+    <movable-view direction="all"><text>移动视图</text></movable-view>
+  </movable-area>
+  <view wx:for="{{list}}" wx:for-item="item" wx:for-index="idx" wx:key="id">
+    {{item.id}}: {{item.name}}----{{idx}}
+  </view>
+  <text hidden="{{visible}}">12321312</text>
+</view>
