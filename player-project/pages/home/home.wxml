@@ -1,6 +1,36 @@
 <!--pages/home.wxml-->
+<!-- 引入template -->
+<import src="../../template/list/list"></import>
+
 <view>
-  <text>home页面</text>
+  <my-list userId="{{id}}" name="{{name}}" bind:updateName="handleComponentEvent"></my-list>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
+  <view><text>home页面</text></view>
   <movable-area style="width:100px;height: 100px;">
     <movable-view direction="all"><text>移动视图</text></movable-view>
   </movable-area>
@@ -8,4 +38,8 @@
     {{item.id}}: {{item.name}}----{{idx}}
   </view>
   <text hidden="{{visible}}">12321312</text>
+  <view>
+    <text>使用template</text>
+    <template is="listTemp" wx:for="{{list}}" wx:for-item="item" wx:for-index="idx" wx:key="id" data="{{ item }}" />
+  </view>
 </view>

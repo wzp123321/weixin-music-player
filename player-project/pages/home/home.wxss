@@ -1,1 +1,2 @@
 /* pages/home.wxss */
+/* @import '../../template/list/list.wxss'  */

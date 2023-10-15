@@ -25,7 +25,8 @@
     },
     "subpackages": [],
     "usingComponents": {
-        "t-demo": "./components/demo-block/index"
+      "my-list": "/components/my-list/my-list",
+      "vant-button": "@vant/weapp/button/index"
     },
     "window": {
         "backgroundTextStyle": "light",

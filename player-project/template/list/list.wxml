@@ -1,0 +1,8 @@
+<template name="listTemp">
+  <text class="info">这是一个msg模板</text>
+  <view class="list-template">
+    <text>{{ item.id }}</text>
+    -------------
+    <text bind:tap="handleTextTap">{{ item.name }}</text>
+  </view>
+</template>
