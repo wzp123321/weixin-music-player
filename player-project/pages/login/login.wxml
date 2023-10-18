@@ -1,2 +1,15 @@
-<!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="login">
+  <!-- 表单 -->
+  <view class="login-form">
+    <!-- 标题 -->
+    <view class="login-form-title">
+      <text>网易云Music</text>
+    </view>
+    <!-- 手机号码 -->
+    <van-field label="手机号码" model:value="{{ phone }}" placeholder="请输入手机号码" />
+    <!-- 密码 -->
+    <van-field label="密码" type="password" model:value="{{ password }}" placeholder="请输入密码" />
+    <!-- 按钮 -->
+    <vant-button custom-class="login-form-button" bind:tap="handleSubmit">登录</vant-button>
+  </view>
+</view>

@@ -1,1 +1,35 @@
 /* pages/login/login.wxss */
+.login {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* background-image: url('../../assets/images/login/login-bg.jpg'); */
+  background-position: top center;
+  overflow: hidden;
+}
+
+
+.login .login-form {
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  padding-top: 32px;
+  overflow: hidden;
+
+  background-color: var(--music-color-default);
+  border-radius: var(--music-space-16) var(--music-space-16) 0 0;
+}
+
+.login .login-form .login-form-title{
+  text-align: center;
+  font-size: var(--music-font-20);
+  margin-bottom: var(--music-space-24);
+}
+
+.login .login-form .login-form-button {
+  width: 100%;
+  margin-top: var(--music-space-24);
+  background-color: var(--music-color-primary);
+  border-radius: var(--music-space-8);
+  color: var(--music-color-default);
+}

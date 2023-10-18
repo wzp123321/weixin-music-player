@@ -1,6 +1,7 @@
 import template from '../../template/template'
 import myBehavior from '../../behaviors/my-behavior'
 
+
 Page({
   data: {
     list: [{
@@ -15,6 +16,12 @@ Page({
   handleComponentEvent: function (event) {
     this.setData({
       name: event.detail
+    })
+  },
+  handlePageTo: function (event) {
+    console.log(event)
+    wx.navigateTo({
+      url: '/pages/login/login',
     })
   },
   // 是用于组件间代码共享的特性，类似于一些编程语言中的 “mixins” 或 “traits”。

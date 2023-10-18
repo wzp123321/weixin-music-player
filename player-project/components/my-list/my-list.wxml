@@ -1,9 +1,6 @@
 <!--components/my-list.wxml-->
 <view>
   <view>
-    <vant-button type="primary">测试vant</vant-button>
-  </view>
-  <view>
     <text>behavior数据 -========={{behaviorData.test}}</text>
   </view>
   <view>

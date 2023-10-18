@@ -1,19 +1,37 @@
 page {
-  background: #f6f6f6;
-}
-.demo {
-  padding-bottom: 56rpx;
-}
-.demo-title {
-  font-size: 48rpx;
-  font-weight: 700;
-  line-height: 64rpx;
-  margin: 48rpx 32rpx 0;
-  color: var(--td-font-gray-1, rgba(0, 0, 0, 0.9));
-}
-.demo-desc {
-  font-size: 28rpx;
-  color: var(--td-font-gray-2, rgba(0, 0, 0, 0.6));
-  margin: 16rpx 32rpx 0;
-  line-height: 44rpx;
+  width: 100%;
+  height: 100%;
+
+  /* 主题 */
+  --music-color-primary: #f53f3f;
+  --music-color-default: #fff;
+
+  /* 字体颜色 */
+
+  /* ------------------------------------------变量--------------------------------------------------- */
+  /* 字体大小 */
+  --music-font-12: 12px;
+  --music-font-14: 14px;
+  --music-font-16: 16px;
+  --music-font-20: 20px;
+  --music-font-24: 24px;
+  /* 间距 */
+  --music-space-4: 4px;
+  --music-space-8: 8px;
+  --music-space-12: 12px;
+  --music-space-16: 16px;
+  --music-space-20: 20px;
+  --music-space-24: 24px;
+  --music-space-28: 28px;
+  --music-space-32: 32px;
+  --music-space-36: 36px;
+  --music-space-40: 40px;
+  --music-space-48: 48px;
+  --music-space-56: 56px;
+  --music-space-60: 60px;
+  --music-space-72: 72px;
+  --music-space-80: 80px;
+  --music-space-96: 96px;
+  --music-space-100: 100px;
+  --music-space-120: 120px;
 }

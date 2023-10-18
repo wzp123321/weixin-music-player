@@ -3,7 +3,9 @@
 <import src="../../template/list/list"></import>
 
 <view>
-  <my-list userId="{{id}}" name="{{name}}" bind:updateName="handleComponentEvent"></my-list>
+  <view>
+    <vant-button type="primary" bind:tap="handlePageTo" data-id="{{id}}" data-name="{{name}}">测试vant</vant-button>
+  </view>
   <view><text>home页面</text></view>
   <view><text>home页面</text></view>
   <view><text>home页面</text></view>
