@@ -1,32 +1,48 @@
-import template from '../../template/template'
-import myBehavior from '../../behaviors/my-behavior'
-
+import {
+  sendRequest
+} from '../../services/request'
+import {
+  requestUrl
+} from '../../config/path'
 
 Page({
   data: {
-    list: [{
-      id: 1,
-      name: '测试1'
-    }],
-    id: 9527,
-    name: 'init'
+    singerList: [], // 歌手列表
+    recommendMusicList:[],// 每日推荐歌曲
   },
-  behaviors: [myBehavior],
-  handleTextTap: template.handleTextTap,
-  handleComponentEvent: function (event) {
-    this.setData({
-      name: event.detail
-    })
-  },
-  handlePageTo: function (event) {
-    console.log(event)
-    wx.navigateTo({
-      url: '/pages/login/login',
-    })
-  },
+
   // 是用于组件间代码共享的特性，类似于一些编程语言中的 “mixins” 或 “traits”。
   behaviors: [],
-  onLoad: (e) => {
+  // 查询热门歌手列表
+  queryHotSingerList: async function () {
+    const that = this;
+    const res = await sendRequest(`${requestUrl.首页.查询热门歌手列表}?limit=30`, {
+    })
+    that.setData({
+      singerList: res.data?.artists?.map(item=>({
+        name: item.name,
+        imageUrl: item?.img1v1Url,
+        id: item?.id,
+      })) ?? []
+    })
+  },
+  // 查询每日推荐歌曲
+  queryRecommendMusicList: async function () {
+    const that = this;
+    const res = await sendRequest(`${requestUrl.首页.获取每日推荐歌曲}?limit=30`, {
+    })
+    console.log(res)
+    that.setData({
+      recommendMusicList: res.data?.data?.dailySongs?.map(item=>({
+        name: item.name,
+        imageUrl: item?.al?.picUrl,
+        id: item?.al?.id,
+      })) ?? []
+    })
+  },
+  onLoad: function (e) {
+    this.queryHotSingerList();
+    this.queryRecommendMusicList();
     console.log('onLoad,页面加载时触发。一个页面只会调用一次，可以在 onLoad 的参数中获取打开当前页面路径中的参数。--------------', e)
   },
   onShow: () => {
@@ -56,4 +72,5 @@ Page({
   onShareAppMessage: (args) => {
     console.log('onShareAppMessage,用户点击右上角转发。--------------', args)
   },
+
 })

@@ -1,4 +1,0 @@
-/* template/list/list.wxss */
-.list-template text{
-  color: red;
-}

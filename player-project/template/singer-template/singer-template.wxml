@@ -1,0 +1,6 @@
+<template name="singerTemp">
+  <view class="singer-template">
+    <image src="{{imageUrl}}" />
+    <text bind:tap="handleTextTap">{{ name }}</text>
+  </view>
+</template>

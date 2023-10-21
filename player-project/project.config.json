@@ -4,6 +4,47 @@
         "ignore": [],
         "include": []
     },
+    "skeleton-config": {
+        "global": {
+            "loading": "spin",
+            "text": {
+                "color": "#EEEEEE"
+            },
+            "image": {
+                "shape": "",
+                "color": "#EFEFEF",
+                "shapeOpposite": []
+            },
+            "button": {
+                "color": "#EFEFEF",
+                "excludes": []
+            },
+            "pseudo": {
+                "color": "#EFEFEF",
+                "shape": "circle",
+                "shapeOpposite": []
+            },
+            "excludes": [],
+            "remove": [
+                ".footer"
+            ],
+            "empty": [],
+            "hide": [],
+            "grayBlock": [
+                ".swiper-item",
+                ".scroll-view-item"
+            ],
+            "cssUnit": "rpx",
+            "decimal": 4,
+            "showNative": false,
+            "backgroundColor": "transparent",
+            "mode": "auto",
+            "templateName": "skeleton"
+        },
+        "pages": {
+            "pages/home/home": {}
+        }
+    },
     "setting": {
         "urlCheck": false,
         "scopeDataCheck": false,

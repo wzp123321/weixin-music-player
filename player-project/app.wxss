@@ -1,3 +1,5 @@
+@import './assets/iconfont/iconfont.wxss';
+
 page {
   width: 100%;
   height: 100%;
@@ -7,7 +9,14 @@ page {
   --music-color-default: #fff;
 
   /* 字体颜色 */
-
+  --music-color-font: black !important;
+  --music-color-font-title: rgba(0, 0, 0, 0.85) !important;
+  --music-color-font-primary: rgba(0, 0, 0, 0.65) !important;
+  --music-color-font-secondary: rgba(0, 0, 0, 0.45) !important;
+  --music-color-font-disable: rgba(0, 0, 0, 0.25) !important;
+  --music-color-font-border: rgba(0, 0, 0, 0.15) !important;
+  --music-color-font-divider: rgba(0, 0, 0, 0.06) !important;
+  --music-color-font-background: rgba(0, 0, 0, 0.04) !important;
   /* ------------------------------------------变量--------------------------------------------------- */
   /* 字体大小 */
   --music-font-12: 12px;

@@ -1,32 +1,35 @@
 {
-    "entryPagePath": "pages/login/login",
+    "entryPagePath": "pages/home/home",
     "pages": [
         "pages/home/home",
         "pages/user/user",
         "pages/login/login"
     ],
     "tabBar": {
-        "selectedColor": "#35c8fb",
-        "color": "#7f8389",
+        "selectedColor": "#f53f3f",
+        "color": "#ffffff",
+        "backgroundColor": "#05090d",
         "list": [
             {
                 "pagePath": "pages/home/home",
-                "text": "发现音乐",
-                "iconPath": "assets/tabbar/chat_list_unselected.png",
-                "selectedIconPath": "assets/tabbar/chat_list.png"
+                "text": "音乐",
+                "iconPath": "assets/images/tabbar/music-unselected.png",
+                "selectedIconPath": "assets/images/tabbar/music-selected.png"
             },
             {
                 "pagePath": "pages/user/user",
-                "text": "我的音乐",
-                "iconPath": "assets/tabbar/friend_unselected.png",
-                "selectedIconPath": "assets/tabbar/friend.png"
+                "text": "我的",
+                "iconPath": "assets/images/tabbar/user-unselected.png",
+                "selectedIconPath": "assets/images/tabbar/user-selected.png"
             }
         ]
     },
     "subpackages": [],
     "usingComponents": {
       "van-field": "@vant/weapp/field/index",
-      "vant-button": "@vant/weapp/button/index"
+      "vant-button": "@vant/weapp/button/index",
+      "page-container": "components/page-container/page-container",
+      "sub-module": "components/sub-module/sub-module"
     },
     "window": {
         "backgroundTextStyle": "light",

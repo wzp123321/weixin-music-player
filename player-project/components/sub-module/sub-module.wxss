@@ -1,0 +1,23 @@
+.sub-module {
+  padding: var(--music-space-16) 0 0 var(--music-space-4);
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-module>text {
+  position: relative;
+  font-size: var(--music-font-14);
+  color: var(--music-color-font);
+  padding-left: var(--music-space-8);
+  font-weight: 700;
+}
+
+.sub-module>text::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: var(--music-color-primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

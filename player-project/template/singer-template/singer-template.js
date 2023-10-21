@@ -1,13 +1,14 @@
-// template/list/list.js
+// template/singer-template/singer-template.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    item: {
-      id: 1,
-      name: '111'
+    item:{
+      name: '',
+      imageUrl:  '',
+      id:  '',
     }
   },
   handleTextTap() {

@@ -1,47 +1,26 @@
 <!--pages/home.wxml-->
-<!-- 引入template -->
-<import src="../../template/list/list"></import>
+<!-- 模板 -->
+<import src="../../template/singer-template/singer-template.wxml" />
 
-<view>
-  <view>
-    <vant-button type="primary" bind:tap="handlePageTo" data-id="{{id}}" data-name="{{name}}">测试vant</vant-button>
-  </view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <view><text>home页面</text></view>
-  <movable-area style="width:100px;height: 100px;">
-    <movable-view direction="all"><text>移动视图</text></movable-view>
-  </movable-area>
-  <view wx:for="{{list}}" wx:for-item="item" wx:for-index="idx" wx:key="id">
-    {{item.id}}: {{item.name}}----{{idx}}
-  </view>
-  <text hidden="{{visible}}">12321312</text>
-  <view>
-    <text>使用template</text>
-    <template is="listTemp" wx:for="{{list}}" wx:for-item="item" wx:for-index="idx" wx:key="id" data="{{ item }}" />
-  </view>
-</view>
+<page-container class="home">
+  <!-- banner -->
+  <home-banner></home-banner>
+  <!-- tab -->
+  <home-tabBar></home-tabBar>
+  <!-- 热门歌手 -->
+  <sub-module subTitle="热门歌手">
+    <scroll-view scroll-x="{{true}}">
+      <view class="home-container">
+        <template is="singerTemp" wx:for="{{singerList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" data="{{...item}}"></template>
+      </view>
+    </scroll-view>
+  </sub-module>
+  <!-- 每日推荐 -->
+  <sub-module subTitle="每日推荐">
+    <scroll-view scroll-x="{{true}}">
+      <view class="home-container">
+        <template is="singerTemp" wx:for="{{recommendMusicList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" data="{{...item}}"></template>
+      </view>
+    </scroll-view>
+  </sub-module>
+</page-container>

@@ -2,6 +2,9 @@
 import {
   sendRequest
 } from '../../services/request.js'
+import {
+  FSetStorageData
+} from '../../utils/storage.js'
 
 Page({
 
@@ -9,8 +12,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    phone: '',
-    password: '',
+    phone: '13225542838',
+    password: 'wzp13225542838',
   },
 
   /**
@@ -23,8 +26,10 @@ Page({
    * 登录
    */
   handleSubmit: async function () {
-    const res = await sendRequest(`http://localhost:3000/login/cellphone?phone=${this.data.phone}&password=${this.data.password}`, 'GET')
-    console.log(res, res.data.token)
+    const res = await sendRequest(`/login/cellphone?phone=${this.data.phone}&password=${this.data.password}`, 'GET')
+    console.log(res)
+    FSetStorageData('common-token', res.data.token)
+    FSetStorageData('common-profile', res.data.profile)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

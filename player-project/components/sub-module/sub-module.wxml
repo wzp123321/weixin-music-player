@@ -1,0 +1,4 @@
+<view class="sub-module">
+  <text>{{subTitle}}</text>
+  <slot></slot>
+</view>

@@ -1,0 +1,8 @@
+<view class="home-tabBar">
+  <view wx:for="{{tabBarList}}" wx:key="name" wx:item="item" class="home-tabBar-item">
+    <view class="home-tabBar-item-icon" style="background-color: {{item.color}};">
+      <i class="iconfont {{item.icon}}"></i>
+    </view>
+    <text>{{item.name}}</text>
+  </view>
+</view>

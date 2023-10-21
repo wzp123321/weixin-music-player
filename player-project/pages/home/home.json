@@ -1,7 +1,9 @@
 {
   "usingComponents": {
+    "home-banner": "./home-banner/home-banner",
+    "home-tabBar": "./home-tabBar/home-tabBar"
   },
-  "navigationBarTitleText": "首页",
+  "navigationBarTitleText": "音乐",
   "navigationBarBackgroundColor": "#f6f6f6",
   "navigationBarTextStyle": "black",
   "backgroundColor": "#f6f6f6",

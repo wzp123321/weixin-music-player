@@ -1,0 +1,3 @@
+<scroll-view scroll-y="{{true}}" class="page-container">
+  <slot></slot>
+</scroll-view>

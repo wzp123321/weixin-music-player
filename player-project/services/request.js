@@ -1,10 +1,13 @@
-const app = getApp();
+import {
+  COMMON_REQUEST_SUFFIX
+} from '../config/index'
+
 //封装request请求
 const sendRequest = (url, method = 'GET', data = {}, contentType) => {
   var token = wx.getStorageSync('token') || '';
   return new Promise(function (resolve, reject) {
     wx.request({
-      url: url,
+      url: `${COMMON_REQUEST_SUFFIX}${url}`,
       data: data,
       method: method,
       header: {

@@ -1,0 +1,19 @@
+.singer-template {
+  display: flex;
+  flex-direction: column;
+  margin-right: var(--music-space-8);
+  height: fit-content;
+}
+
+.singer-template image {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--music-space-8);
+}
+
+.singer-template text {
+  margin-top: var(--music-space-4);
+  font-size: var(--music-font-12);
+  color: var(--music-color-font-primary);
+  text-align: center;
+}
