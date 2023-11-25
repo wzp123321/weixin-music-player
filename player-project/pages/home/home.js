@@ -8,7 +8,7 @@ import {
 Page({
   data: {
     singerList: [], // 歌手列表
-    recommendMusicList:[],// 每日推荐歌曲
+    recommendMusicList: [], // 每日推荐歌曲
   },
 
   // 是用于组件间代码共享的特性，类似于一些编程语言中的 “mixins” 或 “traits”。
@@ -16,10 +16,9 @@ Page({
   // 查询热门歌手列表
   queryHotSingerList: async function () {
     const that = this;
-    const res = await sendRequest(`${requestUrl.首页.查询热门歌手列表}?limit=30`, {
-    })
+    const res = await sendRequest(`${requestUrl.首页.查询热门歌手列表}?limit=30`, {})
     that.setData({
-      singerList: res.data?.artists?.map(item=>({
+      singerList: res.data?.artists?.map(item => ({
         name: item.name,
         imageUrl: item?.img1v1Url,
         id: item?.id,
@@ -29,15 +28,26 @@ Page({
   // 查询每日推荐歌曲
   queryRecommendMusicList: async function () {
     const that = this;
-    const res = await sendRequest(`${requestUrl.首页.获取每日推荐歌曲}?limit=30`, {
-    })
+    const res = await sendRequest(`${requestUrl.首页.获取每日推荐歌曲}?limit=30`, {})
     console.log(res)
     that.setData({
-      recommendMusicList: res.data?.data?.dailySongs?.map(item=>({
+      recommendMusicList: res.data?.data?.dailySongs?.map(item => ({
         name: item.name,
         imageUrl: item?.al?.picUrl,
         id: item?.al?.id,
       })) ?? []
+    })
+  },
+  /**
+   * 页面跳转
+   */
+  handlePageTo: function (event) {
+    const {
+      id,
+      name
+    } = event.currentTarget.dataset
+    wx.navigateTo({
+      url: `/pages/singer-detail/singer-detail?id=${id}&name=${name}`,
     })
   },
   onLoad: function (e) {

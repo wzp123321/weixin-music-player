@@ -3,7 +3,9 @@
     "pages": [
         "pages/home/home",
         "pages/user/user",
-        "pages/login/login"
+        "pages/login/login",
+        "pages/search/search",
+        "pages/singer-detail/singer-detail"
     ],
     "tabBar": {
         "selectedColor": "#f53f3f",
@@ -26,10 +28,10 @@
     },
     "subpackages": [],
     "usingComponents": {
-      "van-field": "@vant/weapp/field/index",
-      "vant-button": "@vant/weapp/button/index",
-      "page-container": "components/page-container/page-container",
-      "sub-module": "components/sub-module/sub-module"
+        "van-field": "@vant/weapp/field/index",
+        "vant-button": "@vant/weapp/button/index",
+        "page-container": "components/page-container/page-container",
+        "sub-module": "components/sub-module/sub-module"
     },
     "window": {
         "backgroundTextStyle": "light",

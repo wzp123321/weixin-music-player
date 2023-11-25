@@ -1,5 +1,5 @@
 <template name="singerTemp">
-  <view class="singer-template">
+  <view class="singer-template" bind:tap="handlePageTo" data-id="{{id}}" data-name="{{name}}">
     <image src="{{imageUrl}}" />
     <text bind:tap="handleTextTap">{{ name }}</text>
   </view>
