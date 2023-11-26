@@ -1,7 +1,7 @@
 import {
   COMMON_REQUEST_SUFFIX
 } from '../config/index'
-
+// 请求拦截https://juejin.cn/post/6977247932051537933
 //封装request请求
 const sendRequest = (url, method = 'GET', data = {}, contentType) => {
   var token = wx.getStorageSync('token') || '';

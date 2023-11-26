@@ -60,7 +60,7 @@
         "uploadWithSourceMap": true,
         "useIsolateContext": true,
         "nodeModules": true,
-        "enhance": false,
+        "enhance": true,
         "useCompilerModule": true,
         "userConfirmedUseCompilerModuleSwitch": false,
         "showShadowRootInWxmlPanel": true,
@@ -69,7 +69,7 @@
             "disablePlugins": [],
             "outputPath": ""
         },
-        "condition": true,
+        "condition": false,
         "packNpmManually": true,
         "packNpmRelationList": [
             {

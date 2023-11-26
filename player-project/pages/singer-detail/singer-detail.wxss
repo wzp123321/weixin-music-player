@@ -1,1 +1,44 @@
 /* pages/singer-detail/singer-detail.wxss */
+.singer-detail {
+  width: 100%;
+  height: 100%;
+
+}
+
+.singer-detail .sd-cover {
+  position: relative;
+  width: 100%;
+  height: 540rpx;
+
+}
+
+.singer-detail .sd-cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--music-color-font-secondary);
+}
+
+.singer-detail .sd-cover image {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.singer-detail .sd-header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.singer-detail .sd-header .sd-header-name {
+  color: var(--music-color-font-title);
+  font-size: var(--music-font-48);
+  padding: var(--music-space-24) 0;
+  font-family: 'YuWeiShuFaXingShuJianTi';
+}

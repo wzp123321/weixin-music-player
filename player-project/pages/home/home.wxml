@@ -19,7 +19,8 @@
   <sub-module subTitle="每日推荐">
     <scroll-view scroll-x="{{true}}">
       <view class="home-container">
-        <template is="singerTemp" wx:for="{{recommendMusicList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" data="{{...item}}"></template>
+        <template is="singerTemp" wx:for="{{recommendMusicList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" data="{{...item}}">
+        </template>
       </view>
     </scroll-view>
   </sub-module>

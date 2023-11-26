@@ -9,6 +9,7 @@ Page({
       name: '',
       imageUrl:  '',
       id:  '',
+      type: ''
     }
   },
   handleTextTap() {

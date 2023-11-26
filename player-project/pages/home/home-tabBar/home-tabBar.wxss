@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 16px 0;
+  padding: var(--music-space-36) 0;
 }
 
 .home-tabBar .home-tabBar-item {
@@ -17,20 +17,20 @@
 }
 
 .home-tabBar .home-tabBar-item .home-tabBar-item-icon {
-  width: var(--music-space-36);
-  height:var(--music-space-36);
-  line-height:var(--music-space-36);
+  width: var(--music-space-72);
+  height:var(--music-space-72);
+  line-height:var(--music-space-72);
   text-align: center;
   border-radius: 50%;
 }
 
 .home-tabBar .home-tabBar-item .home-tabBar-item-icon .iconfont{
-  font-size: var(--music-font-24);
+  font-size: var(--music-font-48);
   color: var(--music-color-default);
 }
 
 .home-tabBar .home-tabBar-item text {
   font-size: var(--music-font-14);
-  margin-top: var(--music-space-4);
+  margin-top: var(--music-space-10);
   color: var(--music-color-font-primary);
 }

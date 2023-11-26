@@ -1,2 +1,3 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<button open-type="share" type="primary">
+  分享给好友
+  </button>

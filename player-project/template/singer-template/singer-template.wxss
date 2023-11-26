@@ -1,19 +1,21 @@
 .singer-template {
+  width: 200rpx;
   display: flex;
   flex-direction: column;
-  margin-right: var(--music-space-8);
+  align-content: center;
+  justify-content: center;
   height: fit-content;
+  gap: var(--music-space-8);
 }
 
 .singer-template image {
-  width: 64px;
-  height: 64px;
-  border-radius: var(--music-space-8);
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: var(--music-space-12);
 }
 
 .singer-template text {
-  margin-top: var(--music-space-4);
-  font-size: var(--music-font-12);
+  font-size: var(--music-font-30);
   color: var(--music-color-font-primary);
   text-align: center;
 }

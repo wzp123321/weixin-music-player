@@ -1,0 +1,6 @@
+<view class="common-load-error">
+  <van-image width="162" height="162" src="../../assets/images/common/common-load-error.svg" />
+  <view class="cle-message">加载失败</view>
+  <view class="cle-description">请刷新页面重试</view>
+  <button type="button" class="cle-btn" bind:tap="handlePageRefresh">刷新</button>
+</view>

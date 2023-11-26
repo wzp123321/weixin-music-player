@@ -9,6 +9,9 @@
 
 .home .home-container {
   display: flex;
-  height: 87px;
+  flex-direction: row;
+  justify-content: space-between;
+  /* height: 724rpx; */
   padding: var(--music-space-16) 0;
+  flex-wrap: wrap;
 }

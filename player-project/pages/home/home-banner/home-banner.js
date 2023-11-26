@@ -3,7 +3,7 @@ import {
   sendRequest
 } from '../../../services/request'
 import {
-  requestUrl
+  COMMON_REQUEST_PATH
 } from '../../../config/path'
 
 Component({
@@ -32,7 +32,7 @@ Component({
       this.setData({
         loading: true,
       })
-      const res = await sendRequest(requestUrl.首页.获取Banner, {
+      const res = await sendRequest(COMMON_REQUEST_PATH.首页.获取Banner, {
         type: 1
       })
       this.setData({

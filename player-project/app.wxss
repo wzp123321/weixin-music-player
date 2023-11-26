@@ -1,5 +1,15 @@
 @import './assets/iconfont/iconfont.wxss';
 
+@font-face {
+  font-family: "YuWeiShuFaXingShuJianTi";
+  src: url("./assets/font/common-font/YuWeiShuFaXingShuJianTi.ttf");  
+}
+
+@font-face {
+  font-family: "YunFengFeiYunTi";
+  src: url("./assets/font/common-font/YunFengFeiYunTi.ttf");  
+}
+
 page {
   width: 100%;
   height: 100%;
@@ -19,28 +29,30 @@ page {
   --music-color-font-background: rgba(0, 0, 0, 0.04) !important;
   /* ------------------------------------------变量--------------------------------------------------- */
   /* 字体大小 */
-  --music-font-12: 12px;
-  --music-font-14: 14px;
-  --music-font-16: 16px;
-  --music-font-20: 20px;
-  --music-font-24: 24px;
+  --music-font-24: 24rpx;
+  --music-font-28: 28rpx;
+  --music-font-30: 30rpx;
+  --music-font-32: 32rpx;
+  --music-font-36: 36rpx;
+  --music-font-40: 40rpx;
+  --music-font-48: 48rpx;
   /* 间距 */
-  --music-space-4: 4px;
-  --music-space-8: 8px;
-  --music-space-12: 12px;
-  --music-space-16: 16px;
-  --music-space-20: 20px;
-  --music-space-24: 24px;
-  --music-space-28: 28px;
-  --music-space-32: 32px;
-  --music-space-36: 36px;
-  --music-space-40: 40px;
-  --music-space-48: 48px;
-  --music-space-56: 56px;
-  --music-space-60: 60px;
-  --music-space-72: 72px;
-  --music-space-80: 80px;
-  --music-space-96: 96px;
-  --music-space-100: 100px;
-  --music-space-120: 120px;
+  --music-space-8: 8rpx;
+  --music-space-10: 10rpx;
+  --music-space-12: 12rpx;
+  --music-space-16: 16rpx;
+  --music-space-20: 20rpx;
+  --music-space-24: 24rpx;
+  --music-space-28: 28rpx;
+  --music-space-32: 32rpx;
+  --music-space-36: 36rpx;
+  --music-space-40: 40rpx;
+  --music-space-48: 48rpx;
+  --music-space-56: 56rpx;
+  --music-space-60: 60rpx;
+  --music-space-72: 72rpx;
+  --music-space-80: 80rpx;
+  --music-space-96: 96rpx;
+  --music-space-100: 100rpx;
+  --music-space-120: 120rpx;
 }

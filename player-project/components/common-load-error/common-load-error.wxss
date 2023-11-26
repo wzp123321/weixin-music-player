@@ -1,0 +1,34 @@
+.common-load-error {
+  flex: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--music-color-default);
+  transition: all 233ms;
+
+}
+
+.common-load-error .cle-message {
+  color: var(--music-color-font-primary);
+  font-size: var(--music-font-36);
+}
+
+.common-load-error .cle-description {
+  margin-top: 8rpx;
+  color: var(--music-color-font-secondary);
+  font-size: var(--music-font-14);
+}
+
+.common-load-error .cle-btn {
+  background-color: var(--music-color-primary);
+  font-size: var(--music-font-36);
+  color: var(--music-color-default);
+  border: none;
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 48rpx;
+}

@@ -5,7 +5,8 @@
         "pages/user/user",
         "pages/login/login",
         "pages/search/search",
-        "pages/singer-detail/singer-detail"
+        "pages/singer-detail/singer-detail",
+        "pages/music-detail/music-detail"
     ],
     "tabBar": {
         "selectedColor": "#f53f3f",
@@ -30,9 +31,15 @@
     "usingComponents": {
         "van-field": "@vant/weapp/field/index",
         "vant-button": "@vant/weapp/button/index",
+        "vant-image": "@vant/weapp/image/index",
         "page-container": "components/page-container/page-container",
-        "sub-module": "components/sub-module/sub-module"
+        "sub-module": "components/sub-module/sub-module",
+        "common-data-empty": "components/common-data-empty/common-data-empty",
+        "common-load-error": "components/common-load-error/common-load-error",
+        "common-network-error": "components/common-network-error/common-network-error",
+        "common-search-empty": "components/common-search-empty/common-search-empty"
     },
+    "lazyCodeLoading": "requiredComponents",
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#f6f6f6",

@@ -2,7 +2,7 @@ import {
   sendRequest
 } from '../../services/request'
 import {
-  requestUrl
+  COMMON_REQUEST_PATH
 } from '../../config/path'
 
 Page({
@@ -16,25 +16,26 @@ Page({
   // 查询热门歌手列表
   queryHotSingerList: async function () {
     const that = this;
-    const res = await sendRequest(`${requestUrl.首页.查询热门歌手列表}?limit=30`, {})
+    const res = await sendRequest(`${COMMON_REQUEST_PATH.首页.查询热门歌手列表}?limit=9`, {})
     that.setData({
       singerList: res.data?.artists?.map(item => ({
         name: item.name,
         imageUrl: item?.img1v1Url,
         id: item?.id,
+        type: 'singer'
       })) ?? []
     })
   },
   // 查询每日推荐歌曲
   queryRecommendMusicList: async function () {
     const that = this;
-    const res = await sendRequest(`${requestUrl.首页.获取每日推荐歌曲}?limit=30`, {})
-    console.log(res)
+    const res = await sendRequest(`${COMMON_REQUEST_PATH.首页.获取每日推荐歌曲}?limit=9`, {})
     that.setData({
-      recommendMusicList: res.data?.data?.dailySongs?.map(item => ({
+      recommendMusicList: res.data?.data?.dailySongs?.splice(0, 9)?.map(item => ({
         name: item.name,
         imageUrl: item?.al?.picUrl,
         id: item?.al?.id,
+        type: 'music'
       })) ?? []
     })
   },
@@ -44,11 +45,22 @@ Page({
   handlePageTo: function (event) {
     const {
       id,
-      name
+      name,
+      type
     } = event.currentTarget.dataset
-    wx.navigateTo({
-      url: `/pages/singer-detail/singer-detail?id=${id}&name=${name}`,
-    })
+    switch (type) {
+      case 'singer':
+        wx.navigateTo({
+          url: `/pages/singer-detail/singer-detail?id=${id}&name=${name}`,
+        })
+        break;
+      case 'music':
+        wx.navigateTo({
+          url: `/pages/music-detail/music-detail?id=${id}&name=${name}`,
+        })
+        break;
+    }
+
   },
   onLoad: function (e) {
     this.queryHotSingerList();

@@ -1,4 +1,10 @@
 <view class="sub-module">
-  <text>{{subTitle}}</text>
+  <view class="sm-header">
+    <text>{{subTitle}}</text>
+    <view class="sm-header-more">
+      <text>更多</text>
+      <i class="iconfont icon-xiangyou"></i>
+    </view>
+  </view>
   <slot></slot>
 </view>

@@ -1,2 +1,14 @@
-<!--pages/singer-detail/singer-detail.wxml-->
-<text>pages/singer-detail/singer-detail.wxml</text>
+<!-- <common-data-empty></common-data-empty> -->
+<!-- <common-load-error></common-load-error> -->
+<!-- <common-network-error></common-network-error> -->
+<!-- <common-search-empty></common-search-empty> -->
+<view class="singer-detail">
+  <!-- 遮罩 -->
+  <view class="sd-cover">
+    <image src="{{singerInfo.picUrl}}" mode="" />
+  </view>
+  <!-- 详情 -->
+  <view class="sd-header">
+    <text class="sd-header-name">{{singerInfo.name}}</text>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+.common-network-error {
+  width: 100%;
+  height: 100%;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--music-color-default);
+  transition: all 233ms;
+
+}
+
+.common-network-error .cne-message {
+  color: var(--music-color-font-primary);
+  font-size: var( --music-font-36);
+}
+
+.common-network-error .cne-description {
+  margin-top: 8rpx;
+  color: var(--music-color-font-secondary);
+  font-size: var(--music-font-14);
+}
+
+.common-network-error .cne-btn {
+  background-color: var(--music-color-primary);
+  font-size: var( --music-font-36);
+  color: var(--music-color-default);
+  border: none;
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 48rpx;
+}

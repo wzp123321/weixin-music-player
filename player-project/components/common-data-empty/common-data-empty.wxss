@@ -1,0 +1,16 @@
+.common-data-empty {
+  width: 100%;
+  height: 100%;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--music-color-default);
+}
+
+.common-data-empty .cde-message {
+  display: block;
+  color: var(--music-color-font-primary);
+  font-size: var(--music-font-36);
+}

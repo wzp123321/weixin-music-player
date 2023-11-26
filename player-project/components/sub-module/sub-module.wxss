@@ -1,23 +1,35 @@
+@import '../../assets/iconfont/iconfont.wxss';
+
+
 .sub-module {
-  padding: var(--music-space-16) 0 0 var(--music-space-4);
   display: flex;
   flex-direction: column;
+  padding: var(--music-space-16);
 }
 
-.sub-module>text {
+.sub-module .sm-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.sub-module .sm-header>text {
   position: relative;
-  font-size: var(--music-font-14);
+  font-size: var( --music-font-36);
   color: var(--music-color-font);
-  padding-left: var(--music-space-8);
   font-weight: 700;
 }
 
-.sub-module>text::before {
-  content: '';
-  width: 2px;
-  height: 100%;
-  background-color: var(--music-color-primary);
-  position: absolute;
-  top: 0;
-  left: 0;
+.sub-module .sm-header .sm-header-more {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-size: var(--music-font-14);
+  line-height: var(--music-font-40);
+  color: var(--music-color-font-secondary);
+}
+
+.sub-module .sm-header .sm-header-more i {
+  width: var(--music-font-14);
+  height: var(--music-font-14);
 }

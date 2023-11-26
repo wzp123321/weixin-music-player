@@ -22,7 +22,7 @@
 
 .login .login-form .login-form-title{
   text-align: center;
-  font-size: var(--music-font-20);
+  font-size: var(--music-font-40);
   margin-bottom: var(--music-space-24);
 }
 
@@ -30,6 +30,6 @@
   width: 100%;
   margin-top: var(--music-space-24);
   background-color: var(--music-color-primary);
-  border-radius: var(--music-space-8);
+  border-radius: var(--music-space-16);
   color: var(--music-color-default);
 }
