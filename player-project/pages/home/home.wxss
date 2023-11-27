@@ -2,17 +2,20 @@
 
 .home {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: var(--music-space-16);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .home .home-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* height: 724rpx; */
-  padding: var(--music-space-16) 0;
   flex-wrap: wrap;
+  row-gap: var(--music-space-24);
+}
+
+.home .home-space {
+  width: 100%;
+  height: var(--music-space-24);
 }

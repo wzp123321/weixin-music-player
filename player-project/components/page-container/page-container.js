@@ -1,6 +1,6 @@
 // components/page-container/page-container.js
 Component({
-
+  externalClasses: ['page-container'],
   /**
    * 组件的属性列表
    */
@@ -23,7 +23,6 @@ Component({
   },
   created() {
     const height = wx.getWindowInfo().windowHeight;
-    console.log(height)
     if (height) {
       this.setData({
         windowHeight: `${height}px`

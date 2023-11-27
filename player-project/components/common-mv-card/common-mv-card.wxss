@@ -1,0 +1,62 @@
+@import '../../assets/iconfont/iconfont.wxss';
+
+.common-mv-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--music-space-8);
+  border-radius: var(--music-space-16);
+  overflow: hidden;
+}
+
+.common-mv-card .cmc-cover {
+  width: 350rpx;
+  height: 200rpx;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.common-mv-card .cmc-description {
+  width: 350rpx;
+  color: var(--music-color-font-title);
+  font-size: var(--music-font-30);
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.common-mv-card .cmc-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 var(--music-space-16);
+  color: var(--music-color-default);
+  font-size: var(--music-font-24);
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 0;
+  top: 150rpx;
+}
+
+.common-mv-card .cmc-info .cmc-info-count {
+  display: flex;
+  align-content: center;
+  gap: var(--music-space-10);
+  
+}
+
+.common-mv-card .cmc-info .cmc-info-count  .cmc-info-count-icon {
+  padding: 2rpx;
+  border: 1rpx solid var(--music-color-default);
+}
+
+.common-mv-card .cmc-info .cmc-info-count  .cmc-info-count-icon .iconfont {
+  font-size: var(--music-font-12);
+  transform: scale(0.6);
+}

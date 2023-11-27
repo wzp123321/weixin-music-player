@@ -1,8 +1,9 @@
-@import './assets/iconfont/iconfont.wxss';
+@import 'assets/iconfont/iconfont.wxss';
 
 /* 兼容自定义tabbar */
 .common-has-tabbar {
-  padding-bottom: 48px;
+  /* 高度48+适配ios env(safe-area-inset-bottom)+ 凸出部分 */
+  padding-bottom: calc(48px + env(safe-area-inset-bottom));
 }
 
 @font-face {
@@ -34,6 +35,8 @@ page {
   --music-color-font-background: rgba(0, 0, 0, 0.04) !important;
   /* ------------------------------------------变量--------------------------------------------------- */
   /* 字体大小 */
+  --music-font-18: 18rpx;
+  --music-font-20: 20rpx;
   --music-font-24: 24rpx;
   --music-font-28: 28rpx;
   --music-font-30: 30rpx;

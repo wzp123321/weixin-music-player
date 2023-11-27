@@ -1,0 +1,22 @@
+/**
+ * 格式化时间戳为hour:min:sec
+ * @param {number} timeStamp
+ * @returns {string}
+ */
+var formatDuration = function (timeStamp) {
+  if (!timeStamp) {
+    return '00:00';
+  }
+  var hour = Math.floor(timeStamp / (60 * 60 * 1000));
+  var min = Math.floor((timeStamp - hour * 60 * 60 * 1000) / (60 * 1000));
+  var sec = Math.floor((timeStamp - min * 60 * 1000) / 1000);
+  var hourStr = hour > 0 ? (hour > 9 ? hour.toFixed(0) : 0 + hour.toFixed(0) + ':') : ''
+  var minStr = min > 9 ? min.toFixed(0) : '0' + min.toFixed(0);
+  var secStr = sec > 9 ? sec.toFixed(0) : 0 + sec.toFixed(0);
+
+  return hourStr + minStr + ':' + secStr;
+}
+
+module.exports = {
+  formatDuration: formatDuration
+};

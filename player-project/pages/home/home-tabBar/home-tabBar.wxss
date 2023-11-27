@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: var(--music-space-36) 0;
+  padding: var(--music-space-32) 0;
+  background-color: var(--music-color-default);
 }
 
 .home-tabBar .home-tabBar-item {

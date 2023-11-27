@@ -3,14 +3,9 @@
 @import '../home.skeleton.wxss';
 
 .home-banner {
-  padding: 0 6px;
+  padding: var(--music-space-16) var(--music-space-16) 0;
   height: 150px;
 }
-
-/* .home-banner .swiper-item {
-  width: 100%;
-  height: 100%;
-} */
 
 .home-banner .home-banner-image {
   width: 100%;

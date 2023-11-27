@@ -11,11 +11,14 @@ Page({
   data: {
     singerList: [], // 歌手列表
     recommendMusicList: [], // 每日推荐歌曲
+    mvList: [], // mv列表
   },
 
   // 是用于组件间代码共享的特性，类似于一些编程语言中的 “mixins” 或 “traits”。
   behaviors: [],
-  // 查询热门歌手列表
+  /**
+   * 查询热门歌手列表
+   */
   queryHotSingerList: async function () {
     const that = this;
     const res = await sendRequest(`${COMMON_REQUEST_PATH.首页.查询热门歌手列表}?limit=9`, {})
@@ -28,7 +31,9 @@ Page({
       })) ?? []
     })
   },
-  // 查询每日推荐歌曲
+  /**
+   * 查询每日推荐歌曲
+   */
   queryRecommendMusicList: async function () {
     const that = this;
     const res = await sendRequest(`${COMMON_REQUEST_PATH.首页.获取每日推荐歌曲}?limit=9`, {})
@@ -38,6 +43,26 @@ Page({
         imageUrl: item?.al?.picUrl,
         id: item?.al?.id,
         type: 'music'
+      })) ?? []
+    })
+  },
+  /**
+   * 查询推荐MV
+   */
+  queryRecommendMVList: async function () {
+    const that = this;
+    const res = await sendRequest(`${COMMON_REQUEST_PATH.首页.获取推荐MV}?limit=8`, {})
+    that.setData({
+      mvList: res.data?.result?.splice(0, 8)?.map(item => ({
+        id: item?.id,
+        artistName: item?.artistName,
+        artistId: item.artistId,
+        duration: item.duration,
+        picUrl: item.picUrl,
+        playCount: item.playCount,
+        type: item.type,
+        name: item.name,
+        copywriter: item.copywriter
       })) ?? []
     })
   },
@@ -67,6 +92,7 @@ Page({
   onLoad: function (e) {
     this.queryHotSingerList();
     this.queryRecommendMusicList();
+    this.queryRecommendMVList();
     console.log('onLoad,页面加载时触发。一个页面只会调用一次，可以在 onLoad 的参数中获取打开当前页面路径中的参数。--------------', e)
     app.globalData.rotateFlag = true
   },

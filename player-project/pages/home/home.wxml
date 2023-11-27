@@ -5,8 +5,10 @@
 <page-container class="home common-has-tabbar">
   <!-- banner -->
   <home-banner></home-banner>
+  <view class="home-space"></view>
   <!-- tab -->
   <home-tabBar></home-tabBar>
+  <view class="home-space"></view>
   <!-- 热门歌手 -->
   <sub-module subTitle="热门歌手">
     <scroll-view scroll-x="{{true}}">
@@ -15,12 +17,21 @@
       </view>
     </scroll-view>
   </sub-module>
+  <view class="home-space"></view>
   <!-- 每日推荐 -->
   <sub-module subTitle="每日推荐">
     <scroll-view scroll-x="{{true}}">
       <view class="home-container">
         <template is="singerTemp" wx:for="{{recommendMusicList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" data="{{...item}}">
         </template>
+      </view>
+    </scroll-view>
+  </sub-module>
+  <!-- 推荐MV -->
+  <sub-module subTitle="推荐MV">
+    <scroll-view scroll-x="{{true}}">
+      <view class="home-container">
+        <common-mv-card wx:for="{{mvList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" mvInfo="{{item}}"></common-mv-card>
       </view>
     </scroll-view>
   </sub-module>

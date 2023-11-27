@@ -1,0 +1,17 @@
+<!-- 引入wxs -->
+<wxs src="../../utils/utils.wxs" module="utilWxs"></wxs>
+
+<view class="common-mv-card">
+  <view class="cmc-cover" style="background-image: url({{mvInfo.picUrl}})"></view>
+  <view class="cmc-description">{{mvInfo.copywriter}}</view>
+  <!-- 详细信息 -->
+  <view class="cmc-info">
+    <view class="cmc-info-count">
+      <view class="cmc-info-count-icon">
+        <i class="iconfont icon-24gf-play"></i>
+      </view>
+      <text>{{mvInfo.playCount ? mvInfo.playCount: 0}}</text>
+    </view>
+    <text>{{ utilWxs.formatDuration(mvInfo.duration) }}</text>
+  </view>
+</view>
