@@ -1,0 +1,55 @@
+.custom-tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  /* 适配苹果 */
+  padding-bottom: env(safe-area-inset-bottom);
+  background-color: #f53f3f;
+}
+
+.custom-tab-bar .ctb-cover {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.custom-tab-bar .ctb-cover .ctb-cover-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.custom-tab-bar .ctd-item {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-tab-bar .ctd-item .ctd-item-img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+}
+
+.custom-tab-bar .ctd-item .ctd-item-text {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.custom-tab-bar .custom-item-active .ctd-item-text {
+  color: #fff;
+}

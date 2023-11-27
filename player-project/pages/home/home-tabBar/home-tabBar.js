@@ -16,13 +16,13 @@ Component({
         name: '搜索',
         icon: 'icon-sousuo',
         color: '#5074b4',
-        url: '',
+        url: '/package-search/pages/search/search',
       },
       {
         name: '精选视频',
         icon: 'icon-24gf-play',
         color: '#83bef0',
-        url: '',
+        url: '/package-login/pages/login/login',
       },
       {
         name: '热门歌曲',
@@ -43,6 +43,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    handlePageTo(event){
+      console.log(event)
+      wx.navigateTo({
+        url: event.currentTarget.dataset.url,
+      })
+    }
   }
 })

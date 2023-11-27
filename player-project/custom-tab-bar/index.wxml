@@ -1,0 +1,10 @@
+<view class="custom-tab-bar">
+  <view class="ctd-item {{ index == selected ? 'custom-item-active' : '' }}" wx:for="{{list}}" wx:key="index" bind:tap="handleClick" data-index="{{ index }}" data-path="{{ item.pagePath }}">
+    <image src="{{ index == selected ? item.selectedIconPath : item.iconPath }}" mode="aspectFit" class="ctd-item-img" />
+    <view class="ctd-item-text">{{ item.text }}</view>
+  </view>
+  <!-- 封面 -->
+  <view class="ctb-cover">
+    <image class="ctb-cover-image" src="{{coverImage}}" mode="" />
+  </view>
+</view>

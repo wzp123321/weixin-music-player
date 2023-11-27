@@ -1,14 +1,19 @@
 @import './assets/iconfont/iconfont.wxss';
 
-@font-face {
-  font-family: "YuWeiShuFaXingShuJianTi";
-  src: url("./assets/font/common-font/YuWeiShuFaXingShuJianTi.ttf");  
+/* 兼容自定义tabbar */
+.common-has-tabbar {
+  padding-bottom: 48px;
 }
 
 @font-face {
+  font-family: "YuWeiShuFaXingShuJianTi";
+  src: url("./assets/font/common-font/YuWeiShuFaXingShuJianTi.ttf");
+}
+
+/* @font-face {
   font-family: "YunFengFeiYunTi";
   src: url("./assets/font/common-font/YunFengFeiYunTi.ttf");  
-}
+} */
 
 page {
   width: 100%;
@@ -36,6 +41,12 @@ page {
   --music-font-36: 36rpx;
   --music-font-40: 40rpx;
   --music-font-48: 48rpx;
+  --music-font-56: 56rpx;
+  --music-font-64: 64rpx;
+  --music-font-72: 72rpx;
+  --music-font-80: 80rpx;
+  --music-font-96: 96rpx;
+  --music-font-100: 100rpx;
   /* 间距 */
   --music-space-8: 8rpx;
   --music-space-10: 10rpx;
@@ -50,6 +61,7 @@ page {
   --music-space-48: 48rpx;
   --music-space-56: 56rpx;
   --music-space-60: 60rpx;
+  --music-space-64: 64rpx;
   --music-space-72: 72rpx;
   --music-space-80: 80rpx;
   --music-space-96: 96rpx;

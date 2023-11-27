@@ -1,6 +1,5 @@
 @import '../../assets/iconfont/iconfont.wxss';
 
-
 .sub-module {
   display: flex;
   flex-direction: column;
@@ -13,9 +12,9 @@
   justify-content: space-between;
 }
 
-.sub-module .sm-header>text {
+.sub-module .sm-header .sm-header-title {
   position: relative;
-  font-size: var( --music-font-36);
+  font-size: var(--music-font-40);
   color: var(--music-color-font);
   font-weight: 700;
 }
@@ -24,12 +23,12 @@
   display: flex;
   flex-direction: row;
   align-content: center;
-  font-size: var(--music-font-14);
+  font-size: var(--music-font-32);
   line-height: var(--music-font-40);
   color: var(--music-color-font-secondary);
 }
 
-.sub-module .sm-header .sm-header-more i {
-  width: var(--music-font-14);
-  height: var(--music-font-14);
+.sub-module .sm-header .sm-header-more .iconfont {
+  width: var(--music-font-32);
+  height: var(--music-font-32);
 }

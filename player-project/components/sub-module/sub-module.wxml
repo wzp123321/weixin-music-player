@@ -1,6 +1,6 @@
 <view class="sub-module">
   <view class="sm-header">
-    <text>{{subTitle}}</text>
+    <text class="sm-header-title">{{subTitle}}</text>
     <view class="sm-header-more">
       <text>更多</text>
       <i class="iconfont icon-xiangyou"></i>

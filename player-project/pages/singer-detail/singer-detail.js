@@ -16,10 +16,13 @@ Page({
     name: '',
     loadErrorFlag: false,
     singerInfo: {
-      briefDesc: '', //简介
-      img1v1Url: '', //头像
-      name: '', //名字
-      picUrl: '', //背景
+      briefDesc: '', // 简介
+      img1v1Url: '', // 头像
+      name: '', // 名字
+      picUrl: '', // 背景
+      musicSize: 0, // 作品数
+      mvSize: 0, // mv
+      albumSize: 0, // 专辑
     }
   },
   /**
@@ -35,6 +38,9 @@ Page({
           img1v1Url: res?.data?.artist?.img1v1Url,
           name: res?.data?.artist?.name,
           picUrl: res?.data?.artist?.picUrl,
+          mvSize: res?.data?.artist?.mvSize,
+          musicSize: res?.data?.artist?.musicSize,
+          albumSize: res?.data?.artist?.albumSize,
         }
       })
     } catch (error) {

@@ -1,8 +1,8 @@
 <view class="home-tabBar">
-  <view wx:for="{{tabBarList}}" wx:key="name" wx:item="item" class="home-tabBar-item">
+  <view wx:for="{{tabBarList}}" wx:key="name" wx:item="item" class="home-tabBar-item" bind:tap="handlePageTo" data-url="{{ item.url }}">
     <view class="home-tabBar-item-icon" style="background-color: {{item.color}};">
       <i class="iconfont {{item.icon}}"></i>
     </view>
-    <text>{{item.name}}</text>
+    <text class="home-tabBar-item-name">{{item.name}}</text>
   </view>
 </view>

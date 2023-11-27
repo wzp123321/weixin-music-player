@@ -1,10 +1,13 @@
 import {
   COMMON_REQUEST_SUFFIX
 } from '../config/index'
+import {
+  FGetStorageData
+} from '../utils/storage'
 // 请求拦截https://juejin.cn/post/6977247932051537933
 //封装request请求
 const sendRequest = (url, method = 'GET', data = {}, contentType) => {
-  var token = wx.getStorageSync('token') || '';
+  var token = FGetStorageData('token') || '';
   return new Promise(function (resolve, reject) {
     wx.request({
       url: `${COMMON_REQUEST_SUFFIX}${url}`,

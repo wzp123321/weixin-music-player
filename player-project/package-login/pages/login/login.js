@@ -1,10 +1,10 @@
 // pages/login/login.js
 import {
   sendRequest
-} from '../../services/request.js'
+} from '../../../services/request.js'
 import {
   FSetStorageData
-} from '../../utils/storage.js'
+} from '../../../utils/storage.js'
 
 Page({
 

@@ -1,51 +1,63 @@
 {
-    "entryPagePath": "pages/home/home",
-    "pages": [
-        "pages/home/home",
-        "pages/user/user",
-        "pages/login/login",
-        "pages/search/search",
-        "pages/singer-detail/singer-detail",
-        "pages/music-detail/music-detail"
-    ],
-    "tabBar": {
-        "selectedColor": "#f53f3f",
-        "color": "#ffffff",
-        "backgroundColor": "#05090d",
-        "list": [
-            {
-                "pagePath": "pages/home/home",
-                "text": "音乐",
-                "iconPath": "assets/images/tabbar/music-unselected.png",
-                "selectedIconPath": "assets/images/tabbar/music-selected.png"
-            },
-            {
-                "pagePath": "pages/user/user",
-                "text": "我的",
-                "iconPath": "assets/images/tabbar/user-unselected.png",
-                "selectedIconPath": "assets/images/tabbar/user-selected.png"
-            }
-        ]
+  "entryPagePath": "pages/home/home",
+  "pages": [
+    "pages/home/home",
+    "pages/user/user",
+    "pages/singer-detail/singer-detail",
+    "pages/music-detail/music-detail"
+  ],
+  "tabBar": {
+    "selectedColor": "#f53f3f",
+    "color": "#ffffff",
+    "backgroundColor": "#05090d",
+    "custom": true,
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "音乐",
+        "iconPath": "assets/images/tabbar/music-unselected.png",
+        "selectedIconPath": "assets/images/tabbar/music-selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "assets/images/tabbar/user-unselected.png",
+        "selectedIconPath": "assets/images/tabbar/user-selected.png"
+      }
+    ]
+  },
+  "subpackages": [{
+      "root": "package-login",
+      "pages": [
+        "pages/login/login"
+      ]
     },
-    "subpackages": [],
-    "usingComponents": {
-        "van-field": "@vant/weapp/field/index",
-        "vant-button": "@vant/weapp/button/index",
-        "vant-image": "@vant/weapp/image/index",
-        "page-container": "components/page-container/page-container",
-        "sub-module": "components/sub-module/sub-module",
-        "common-data-empty": "components/common-data-empty/common-data-empty",
-        "common-load-error": "components/common-load-error/common-load-error",
-        "common-network-error": "components/common-network-error/common-network-error",
-        "common-search-empty": "components/common-search-empty/common-search-empty"
-    },
-    "lazyCodeLoading": "requiredComponents",
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#f6f6f6",
-        "backgroundColor": "#f6f6f6",
-        "navigationBarTitleText": "TDesign",
-        "navigationBarTextStyle": "black"
-    },
-    "sitemapLocation": "sitemap.json"
+    {
+      "root": "package-search",
+      "name": "package-search",
+      "pages": [
+        "pages/search/search"
+      ]
+    }
+  ],
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "page-container": "components/page-container/page-container",
+    "sub-module": "components/sub-module/sub-module",
+    "common-data-empty": "components/common-data-empty/common-data-empty",
+    "common-load-error": "components/common-load-error/common-load-error",
+    "common-network-error": "components/common-network-error/common-network-error",
+    "common-search-empty": "components/common-search-empty/common-search-empty"
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#f6f6f6",
+    "navigationBarTitleText": "云音乐",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
 }

@@ -19,7 +19,7 @@
 .common-network-error .cne-description {
   margin-top: 8rpx;
   color: var(--music-color-font-secondary);
-  font-size: var(--music-font-14);
+  font-size: var(--music-font-32);
 }
 
 .common-network-error .cne-btn {

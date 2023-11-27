@@ -19,5 +19,5 @@
 .common-search-empty .cse-description {
   margin-top: 8rpx;
   color: var(--music-color-font-secondary);
-  font-size: var(--music-font-14);
+  font-size: var(--music-font-32);
 }

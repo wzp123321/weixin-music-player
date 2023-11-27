@@ -1,5 +1,5 @@
 <view class="common-network-error">
-  <van-image width="162" height="162" src="../../assets/images/common/common-network-error.png" />
+  <van-image width="162" height="162" src="/assets/images/common/common-network-error.png" />
   <view class="cne-message">网络异常，请刷新重试</view>
   <view class="cne-description">请检查网络设置后刷新重试</view>
   <button type="button" class="cne-btn" bind:tap="handlePageRefresh">刷新</button>

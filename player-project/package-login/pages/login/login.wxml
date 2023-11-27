@@ -10,6 +10,6 @@
     <!-- 密码 -->
     <van-field label="密码" type="password" model:value="{{ password }}" placeholder="请输入密码" />
     <!-- 按钮 -->
-    <vant-button custom-class="login-form-button" bind:tap="handleSubmit">登录</vant-button>
+    <van-button custom-class="login-form-button" bind:tap="handleSubmit">登录</van-button>
   </view>
 </view>

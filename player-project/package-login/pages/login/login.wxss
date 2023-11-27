@@ -17,7 +17,7 @@
   overflow: hidden;
 
   background-color: var(--music-color-default);
-  border-radius: var(--music-space-16) var(--music-space-16) 0 0;
+  border-radius: var(--music-space-24) var(--music-space-24) 0 0;
 }
 
 .login .login-form .login-form-title{

@@ -2,7 +2,7 @@
 <!-- 模板 -->
 <import src="../../template/singer-template/singer-template.wxml" />
 
-<page-container class="home">
+<page-container class="home common-has-tabbar">
   <!-- banner -->
   <home-banner></home-banner>
   <!-- tab -->
