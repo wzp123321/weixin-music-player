@@ -15,7 +15,8 @@ Component({
         "selectedIconPath": "../assets/images/tabbar/user-selected.png"
       }
     ],
-    coverImage: app.globalData.coverImage
+    coverImage: app.globalData.coverImage,
+    rotateFlag: app.globalData.rotateFlag
   },
 
   methods: {
@@ -33,6 +34,11 @@ Component({
       this.setData({
         selected: index
       })
+    }
+  },
+  observers: {
+    'rotateFlag': function (newVal) {
+      console.log('newVal-------------', newVal)
     }
   }
 });

@@ -5,6 +5,6 @@
   </view>
   <!-- 封面 -->
   <view class="ctb-cover">
-    <image class="ctb-cover-image" src="{{coverImage}}" mode="" />
+    <image animation="{{animationData}}" class="ctb-cover-image {{ rotateFlag ? 'is-rotating' : '' }}" src="{{coverImage}}" mode="" />
   </view>
 </view>

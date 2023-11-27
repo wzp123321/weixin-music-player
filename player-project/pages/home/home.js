@@ -5,6 +5,8 @@ import {
   COMMON_REQUEST_PATH
 } from '../../config/path'
 
+const app = getApp()
+
 Page({
   data: {
     singerList: [], // 歌手列表
@@ -66,6 +68,7 @@ Page({
     this.queryHotSingerList();
     this.queryRecommendMusicList();
     console.log('onLoad,页面加载时触发。一个页面只会调用一次，可以在 onLoad 的参数中获取打开当前页面路径中的参数。--------------', e)
+    app.globalData.rotateFlag = true
   },
   onShow: () => {
     console.log('onShow,页面显示/切入前台时触发。--------------')
