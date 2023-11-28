@@ -1,4 +1,4 @@
-// pages/singer-detail/singer-detail.js
+// package-singer/pages/singer-rank/singer-rank.js
 Page({
 
     /**

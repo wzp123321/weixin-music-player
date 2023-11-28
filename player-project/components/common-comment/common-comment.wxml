@@ -1,0 +1,23 @@
+<view class="common-comment comment-item">
+  <van-image round width="32" height="32" src="{{commentVO.user.avatarUrl}}" />
+  <view class="cc-content">
+    <view class="cc-content-user">
+      <text class="cc-content-user-name">
+        {{ commentVO.user.nickname }}
+      </text>
+      <text class="cc-content-user-location">
+        {{ commentVO.ipLocation.location }}
+      </text>
+    </view>
+    <rich-text class="cc-content-label" nodes="{{commentVO.content}}"></rich-text>
+    <view class="cc-content-reply" wx-if="{{commentVO.beReplied.length > 0 }}">
+      <text class="cc-content-reply-name">
+        <!-- {{
+          commentVO.beReplied.[0].user.nickname commentVO.beReplied.[0].user.nickname + ':' : ''
+        }} -->
+      </text>
+      <rich-text class="cc-content-reply-text" nodes="{{commentVO.beReplied[0].content}}"></rich-text>
+    </view>
+    <view class="cc-content-publish-time">{{ commentVO.timeStr }}</view>
+  </view>
+</view>

@@ -11,28 +11,29 @@
   <view class="home-space"></view>
   <!-- 热门歌手 -->
   <sub-module subTitle="热门歌手">
-    <scroll-view scroll-x="{{true}}">
-      <view class="home-container">
-        <template is="singerTemp" wx:for="{{singerList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" data="{{...item}}"></template>
-      </view>
-    </scroll-view>
+    <van-row gutter="12">
+      <van-col wx:for="{{singerList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="8">
+        <template is="singerTemp" data="{{...item}}"></template>
+      </van-col>
+    </van-row>
   </sub-module>
   <view class="home-space"></view>
   <!-- 每日推荐 -->
   <sub-module subTitle="每日推荐">
-    <scroll-view scroll-x="{{true}}">
-      <view class="home-container">
-        <template is="singerTemp" wx:for="{{recommendMusicList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" data="{{...item}}">
+    <van-row gutter="12">
+      <van-col wx:for="{{recommendMusicList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="8">
+        <template is="singerTemp" data="{{...item}}">
         </template>
-      </view>
-    </scroll-view>
+      </van-col>
+    </van-row>
   </sub-module>
+  <view class="home-space"></view>
   <!-- 推荐MV -->
   <sub-module subTitle="推荐MV">
-    <scroll-view scroll-x="{{true}}">
-      <view class="home-container">
-        <common-mv-card wx:for="{{mvList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" mvInfo="{{item}}"></common-mv-card>
-      </view>
-    </scroll-view>
+    <van-row gutter="12">
+      <van-col wx:for="{{mvList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="12">
+        <common-mv-card mvInfo="{{item}}"></common-mv-card>
+      </van-col>
+    </van-row>
   </sub-module>
 </page-container>

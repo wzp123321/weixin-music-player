@@ -3,7 +3,7 @@
 .sub-module {
   display: flex;
   flex-direction: column;
-  padding: 0 var(--music-space-16) var(--music-space-36);
+  padding: 0 var(--music-space-24);
   background-color: var(--music-color-default);
   box-sizing: border-box;
 }

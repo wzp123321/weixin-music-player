@@ -78,12 +78,12 @@ Page({
     switch (type) {
       case 'singer':
         wx.navigateTo({
-          url: `/pages/singer-detail/singer-detail?id=${id}&name=${name}`,
+          url: `/package-music/pages/singer-detail/singer-detail?id=${id}&name=${name}`,
         })
         break;
       case 'music':
         wx.navigateTo({
-          url: `/pages/music-detail/music-detail?id=${id}&name=${name}`,
+          url: `/package-music/pages/music-detail/music-detail?id=${id}&name=${name}`,
         })
         break;
     }

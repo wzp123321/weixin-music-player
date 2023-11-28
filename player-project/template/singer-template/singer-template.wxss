@@ -1,15 +1,16 @@
 .singer-template {
-  width: 200rpx;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   height: fit-content;
   gap: var(--music-space-8);
+  margin-bottom: var(--music-space-24);
 }
 
 .singer-template image {
-  width: 200rpx;
+  width: 100%;
   height: 200rpx;
   border-radius: var(--music-space-12);
 }

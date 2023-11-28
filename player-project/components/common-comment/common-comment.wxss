@@ -1,0 +1,84 @@
+.comment-item {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--music-space-16);
+  margin-bottom: var(--music-space-24);
+}
+
+.common-comment .cc-content {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-text-divider);
+}
+
+.common-comment .cc-content .cc-content-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.common-comment .cc-content .cc-content-user .cc-content-user-name {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.common-comment .cc-content .cc-content-user .cc-content-user-location {
+  font-size: 12px;
+  margin-left: 6px;
+
+  padding: 0 6px;
+  border-radius: 12px;
+
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.common-comment .cc-content .cc-content-label {
+  font-size: 14px;
+  line-height: 26px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.common-comment .cc-content .cc-content-reply {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 10px;
+  padding-top: 6px;
+  padding-left: 12px;
+
+  border-left: 1px solid var(--color-text-divider);
+}
+
+.common-comment .cc-content .cc-content-reply .cc-content-reply-name {
+  white-space: nowrap;
+  font-size: 12px;
+  color: var(--color-primary-active);
+
+  margin-right: 8px;
+}
+
+.common-comment .cc-content .cc-content-reply .cc-content-reply-text {
+  flex: 1 1 auto;
+  font-size: 12px;
+  color: var(--color-text-primary);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.common-comment .cc-content .cc-content-publish-time {
+  font-size: var(--music-font-28);
+  color: var(--color-text-secondary);
+}

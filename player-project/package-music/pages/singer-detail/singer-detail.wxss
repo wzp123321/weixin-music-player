@@ -1,5 +1,5 @@
 /* pages/singer-detail/singer-detail.wxss */
-@import '../../assets/iconfont/iconfont.wxss';
+@import '../../../assets/iconfont/iconfont.wxss';
 
 .singer-detail {
   width: 100%;

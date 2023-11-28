@@ -4,18 +4,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.home .home-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: var(--music-space-24);
+  background-color: var(--music-color-default);
 }
 
 .home .home-space {
   width: 100%;
   height: var(--music-space-24);
+  background-color: var(--music-color-gray);
 }

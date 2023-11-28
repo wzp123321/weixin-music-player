@@ -1,0 +1,33 @@
+<!-- <common-data-empty></common-data-empty> -->
+<!-- <common-load-error></common-load-error> -->
+<!-- <common-network-error></common-network-error> -->
+<!-- <common-search-empty></common-search-empty> -->
+<view class="singer-detail">
+  <!-- 遮罩 -->
+  <view class="sd-cover">
+    <image src="{{singerInfo.picUrl}}" mode="" />
+  </view>
+  <!-- 详情 -->
+  <view class="sd-header">
+    <view class="sd-header-name">{{ singerInfo.name }}</view>
+    <view class="sd-header-achievement">
+      <view class="sd-header-achievement-item">
+        <i class="iconfont icon-music"></i>
+        <text>{{ singerInfo.musicSize }}</text>
+      </view>
+      <view class="sd-header-achievement-item">
+        <i class="iconfont icon-bofangMV"></i>
+        <text>{{ singerInfo.mvSize }}</text>
+      </view>
+      <view class="sd-header-achievement-item">
+        <i class="iconfont icon-24gl-videoAlbum2"></i>
+        <text> {{ singerInfo.albumSize }}</text>
+      </view>
+    </view>
+    <view class="sd-header-btn">
+      <van-button round type="info">分享</van-button>
+      <van-button round type="primary">全部播放</van-button>
+    </view>
+    <van-divider />
+  </view>
+</view>

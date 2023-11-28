@@ -1,4 +1,4 @@
-// pages/singer-detail/singer-detail.js
+// package-music/pages/music-rank/music-rank.js
 Page({
 
     /**

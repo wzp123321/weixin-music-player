@@ -1,7 +1,7 @@
 <!-- 引入wxs -->
 <wxs src="../../utils/utils.wxs" module="utilWxs"></wxs>
 
-<view class="common-mv-card">
+<view class="common-mv-card" bind:tap="handlePageTo">
   <view class="cmc-cover" style="background-image: url({{mvInfo.picUrl}})"></view>
   <view class="cmc-description">{{mvInfo.copywriter}}</view>
   <!-- 详细信息 -->

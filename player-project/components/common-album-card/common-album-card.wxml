@@ -1,0 +1,12 @@
+<view class="common-album-card">
+  <view class="cac-cover">
+    <image src="{{coverImageUrl}}" mode=""/>
+  </view>
+  <text class="cac-title">{{ title }}</text>
+  <view class="cac-play-count">
+    <text>{{ formatDate(publishTime, 'YYYY-MM-DD') }}</text>
+  </view>
+  <view class="cac-icon">
+    <i class="iconfont icon-24gf-play"></i>
+  </view>
+</view>

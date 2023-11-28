@@ -2,9 +2,7 @@
   "entryPagePath": "pages/home/home",
   "pages": [
     "pages/home/home",
-    "pages/user/user",
-    "pages/singer-detail/singer-detail",
-    "pages/music-detail/music-detail"
+    "pages/user/user"
   ],
   "tabBar": {
     "selectedColor": "#f53f3f",
@@ -37,6 +35,18 @@
       "pages": [
         "pages/search/search"
       ]
+    },
+    {
+      "root": "package-music",
+      "name": "package-music",
+      "pages": [
+        "pages/music-rank/music-rank",
+        "pages/music-detail/music-detail",
+        "pages/singer-rank/singer-rank",
+        "pages/singer-detail/singer-detail",
+        "pages/mv-detail/mv-detail",
+        "pages/album-detail/album-detail"
+      ]
     }
   ],
   "usingComponents": {
@@ -44,13 +54,18 @@
     "van-button": "@vant/weapp/button/index",
     "van-image": "@vant/weapp/image/index",
     "van-divider": "@vant/weapp/divider/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
     "page-container": "components/page-container/page-container",
     "sub-module": "components/sub-module/sub-module",
     "common-data-empty": "components/common-data-empty/common-data-empty",
     "common-load-error": "components/common-load-error/common-load-error",
     "common-network-error": "components/common-network-error/common-network-error",
     "common-search-empty": "components/common-search-empty/common-search-empty",
-    "common-mv-card": "components/common-mv-card/common-mv-card"
+    "common-mv-card": "components/common-mv-card/common-mv-card",
+    "common-comment": "components/common-comment/common-comment"
   },
   "lazyCodeLoading": "requiredComponents",
   "window": {

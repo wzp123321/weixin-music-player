@@ -5,6 +5,7 @@
 .home-banner {
   padding: var(--music-space-16) var(--music-space-16) 0;
   height: 150px;
+  background-color: var(--music-color-gray);
 }
 
 .home-banner .home-banner-image {

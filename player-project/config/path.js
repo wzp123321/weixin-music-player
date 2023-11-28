@@ -8,5 +8,10 @@ export const COMMON_REQUEST_PATH = {
   },
   歌手: {
     歌手详情: '/artists', //?id=3684
+  },
+  歌曲: {
+    根据id获取MV详情: '/mv/detail',
+    获取MV播放地址: '/mv/url',
+    获取MV评论: '/comment/mv'
   }
 }

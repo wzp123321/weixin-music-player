@@ -3,18 +3,13 @@
 /* 兼容自定义tabbar */
 .common-has-tabbar {
   /* 高度48+适配ios env(safe-area-inset-bottom)+ 凸出部分 */
-  padding-bottom: calc(48px + env(safe-area-inset-bottom));
+  padding-bottom: calc(48px + 24px + env(safe-area-inset-bottom));
 }
 
 @font-face {
   font-family: "YuWeiShuFaXingShuJianTi";
   src: url("./assets/font/common-font/YuWeiShuFaXingShuJianTi.ttf");
 }
-
-/* @font-face {
-  font-family: "YunFengFeiYunTi";
-  src: url("./assets/font/common-font/YunFengFeiYunTi.ttf");  
-} */
 
 page {
   width: 100%;
@@ -23,6 +18,7 @@ page {
   /* 主题 */
   --music-color-primary: #f53f3f;
   --music-color-default: #fff;
+  --music-color-gray: #F2F3F5;
 
   /* 字体颜色 */
   --music-color-font: black !important;
@@ -43,6 +39,7 @@ page {
   --music-font-32: 32rpx;
   --music-font-36: 36rpx;
   --music-font-40: 40rpx;
+  --music-font-44: 44rpx;
   --music-font-48: 48rpx;
   --music-font-56: 56rpx;
   --music-font-64: 64rpx;
@@ -51,6 +48,7 @@ page {
   --music-font-96: 96rpx;
   --music-font-100: 100rpx;
   /* 间距 */
+  --divider-margin: 8px;
   --music-space-8: 8rpx;
   --music-space-10: 10rpx;
   --music-space-12: 12rpx;

@@ -23,6 +23,14 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    formatDuration: formatDuration
+    formatDuration: formatDuration,
+    /**
+     * 跳转详情
+     */
+    handlePageTo(){
+      wx.navigateTo({
+        url: `/package-music/pages/mv-detail/mv-detail?id=${this.data.mvInfo.id}`,
+      })
+    }
   }
 })
