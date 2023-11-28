@@ -47,6 +47,10 @@ page {
   --music-font-80: 80rpx;
   --music-font-96: 96rpx;
   --music-font-100: 100rpx;
+  --music-font-120: 120rpx;
+  --music-font-144: 144rpx;
+  --music-font-150: 150rpx;
+  --music-font-160: 160rpx;
   /* 间距 */
   --divider-margin: 8px;
   --music-space-8: 8rpx;
@@ -59,13 +63,25 @@ page {
   --music-space-32: 32rpx;
   --music-space-36: 36rpx;
   --music-space-40: 40rpx;
+  --music-space-44: 44rpx;
   --music-space-48: 48rpx;
   --music-space-56: 56rpx;
   --music-space-60: 60rpx;
   --music-space-64: 64rpx;
   --music-space-72: 72rpx;
   --music-space-80: 80rpx;
+  --music-space-88: 88rpx;
   --music-space-96: 96rpx;
   --music-space-100: 100rpx;
   --music-space-120: 120rpx;
+  --music-space-136: 136rpx;
+  --music-space-144: 144rpx;
+  --music-space-150: 150rpx;
+  --music-space-160: 160rpx;
+  --music-space-200: 200rpx;
+  --music-space-250: 250rpx;
+  --music-space-300: 300rpx;
+  --music-space-360: 360rpx;
+  --music-space-400: 400rpx;
+  --music-space-480: 480rpx;
 }

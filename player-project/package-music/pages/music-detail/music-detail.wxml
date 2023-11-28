@@ -1,2 +1,21 @@
-<!--pages/music-detail/music-detail.wxml-->
-<text>pages/music-detail/music-detail.wxml</text>
+<view class="music-detail" id="music-detail">
+  <view class="md-cover">
+    <van-image width="320" height="320" src="{{musicDetail.al.picUrl}}" />
+    <button primary><i class="iconfont icon-xiazai mr6"></i>下载这首歌</button>
+  </view>
+  <view class="md-info">
+    <view>{{ musicDetail.al.name }}</view>
+    <view class="rr">{{ musicDetail.ar[0].name }}</view>
+    <view class="time">
+      <view>发行时间：</view>
+      <view>{{ formatDate(musicDetail.publishTime, 'YYYY-MM-DD') }}</view>
+    </view>
+    <view class="flex-row-start-center">
+      <button primary><i class="iconfont icon-24gf-play"></i><span>播放歌曲</span></button>
+      <button><i class="iconfont icon-tianjia"></i><span>添加</span></button>
+      <button><i class="iconfont icon-jushoucang"></i><span>收藏</span></button>
+      <button><i class="iconfont icon-fenxiang"></i><span>分享</span></button>
+      <button><i class="iconfont icon-pinglun"></i><span>评论</span></button>
+    </view>
+  </view>
+</view>

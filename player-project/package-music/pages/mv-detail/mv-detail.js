@@ -51,10 +51,12 @@ Page({
     const res = await sendRequest(COMMON_REQUEST_PATH.歌曲.根据id获取MV详情, 'GET', {
       mvid: this.data.id
     })
-    console.log('queryMVDetail-----------', res)
     if (res) {
       this.setData({
         mvDetail: res?.data?.data
+      })
+      wx.setNavigationBarTitle({
+        title: res?.data?.data.name,
       })
     }
   },
@@ -81,7 +83,6 @@ Page({
           hotComments: res?.data?.hotComments
         }
       })
-      console.log(this.data)
     }
   },
   /**
@@ -89,8 +90,7 @@ Page({
    */
   onLoad(options) {
     this.setData({
-      // id: options.id,
-      id:14629024
+      id: options.id,
     });
     this.queryMVDetail();
     this.queryUrl();

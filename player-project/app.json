@@ -65,7 +65,7 @@
     "common-network-error": "components/common-network-error/common-network-error",
     "common-search-empty": "components/common-search-empty/common-search-empty",
     "common-mv-card": "components/common-mv-card/common-mv-card",
-    "common-comment": "components/common-comment/common-comment"
+    "common-comment-item": "components/common-comment-item/common-comment-item"
   },
   "lazyCodeLoading": "requiredComponents",
   "window": {

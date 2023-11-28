@@ -3,13 +3,18 @@
 <!-- <common-network-error></common-network-error> -->
 <!-- <common-search-empty></common-search-empty> -->
 <view class="singer-detail">
-  <!-- 遮罩 -->
-  <view class="sd-cover">
-    <image src="{{singerInfo.picUrl}}" mode="" />
-  </view>
   <!-- 详情 -->
   <view class="sd-header">
-    <view class="sd-header-name">{{ singerInfo.name }}</view>
+    <view class="sd-header-cover" style="background-image: url({{singerInfo.picUrl}});"></view>
+    <view class="sd-header-info">
+      <view class="sd-header-info-name">
+        <van-image src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
+        <view>{{ singerInfo.name }}</view>
+      </view>
+      <view class="sd-header-info-attention">
+        关注
+      </view>
+    </view>
     <view class="sd-header-achievement">
       <view class="sd-header-achievement-item">
         <i class="iconfont icon-music"></i>
@@ -24,10 +29,5 @@
         <text> {{ singerInfo.albumSize }}</text>
       </view>
     </view>
-    <view class="sd-header-btn">
-      <van-button round type="info">分享</van-button>
-      <van-button round type="primary">全部播放</van-button>
-    </view>
-    <van-divider />
   </view>
-</view>
+</view> 

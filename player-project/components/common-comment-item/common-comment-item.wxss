@@ -1,0 +1,79 @@
+.common-comment-item {
+  font-size: var(--music-font-24);
+  display: flex;
+  flex-direction: row;
+  gap: var(--music-space-16);
+  margin-bottom: var(--music-space-24);
+}
+
+.common-comment-item .cc-content {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: var(--music-space-24);
+  border-bottom: 2rpx solid var(--music-color-font-divider);
+}
+
+.common-comment-item .cc-content .cc-content-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.common-comment-item .cc-content .cc-content-user .cc-content-user-name {
+  color: var(--color-text);
+  font-size: var(--music-font-28);
+  font-weight: 700;
+}
+
+.common-comment-item .cc-content .cc-content-user .cc-content-user-location {
+  font-size: var(--music-font-24);
+  margin-left: var(--music-space-12);
+  padding: 0 var(--music-space-12);
+  border-radius: var(--music-space-24);
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.common-comment-item .cc-content .cc-content-label {
+  font-size: var(--music-font-28);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.common-comment-item .cc-content .cc-content-reply {
+  display: flex;
+  flex-direction: row;
+  padding: var(--music-space-12) var(--music-font-24);
+  border-left: 2rpx solid var(--music-color-font-divider);
+}
+
+.common-comment-item .cc-content .cc-content-reply .cc-content-reply-name {
+  white-space: nowrap;
+  font-size: var(--music-font-24);
+  color: var(--color-primary-active);
+
+  margin-right: var(--music-space-16);
+}
+
+.common-comment-item .cc-content .cc-content-reply .cc-content-reply-text {
+  flex: 1 1 auto;
+  font-size: var(--music-font-24);
+  color: var(--music-color-font-primary);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.common-comment-item .cc-content .cc-content-publish-time {
+  font-size: var(--music-font-24);
+  margin-top: var(--music-space-8);
+  color: var(--music-color-font-secondary);
+}

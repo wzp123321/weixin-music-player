@@ -5,7 +5,7 @@
 }
 
 .common-album-card .cac-title {
-  color: var(--color-text-primary);
+  color: var(--music-color-font-primary);
   font-weight: 400;
   font-size: 16px;
   height: 22px;

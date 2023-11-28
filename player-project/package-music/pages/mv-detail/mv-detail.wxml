@@ -1,26 +1,33 @@
+<!-- 引入wxs -->
+<wxs src="../../../utils/utils.wxs" module="utilWxs"></wxs>
 <view class="mv-detail">
   <view class="md-detail-main">
-    <video :src="{{url}}" preload="auto" autoplay controls muted></video>
-    <view class="md-info">
+    <video src="{{url}}" preload="auto" danmu-btn="true" enable-danmu="true" page-gesture="true" show-mute-btn="true" autoplay="true" controls="true" muted="true" title="{{mvDetail.name}}" play-btn-position="center" :enable-play-gesture="true"></video>
+  </view>
+  <view class="md-info">
       <text>《{{ mvDetail.name }}》</text>
       <text>&</text>
       <text> {{ mvDetail.artistName }}</text>
     </view>
     <view class="md-data">
-      {{ mvDetail.playCount }}次播放
+      <view>{{ utilWxs.formatNumber(mvDetail.playCount) }}次播放</view>
+      <view>{{ mvDetail.publishTime }}</view>
     </view>
-  </view>
   <view class="md-comment">
-    <view class="md-comment-header">
-      <text class="title">热门评论</text>
-      <text class="count">{{ commentDetail.hotComments.length }}条</text>
+    <view wx:if="{{commentDetail.hotComments.length>0}}">
+      <view class="md-comment-header">
+        <text class="title">热门评论</text>
+        <text class="count">{{ commentDetail.hotComments.length }}条</text>
+      </view>
+      <common-comment-item wx:for="{{commentDetail.hotComments}}" wx:for-item="item" wx:for-index="index" wx:key="index" commentVO="{{item}}"></common-comment-item>
     </view>
-    <common-comment wx:for="{{commentDetail.hotComments}}" wx:for-item="item" wx:for-index="index" wx:key="index" commentVO="{{item}}"></common-comment>
-    <view class="md-comment-header mt60">
-      <text class="title">最新评论</text>
-      <text class="count">{{ mvDetail.commentCount }}条</text>
+    <view wx:if="{{commentDetail.comments.length>0}}">
+      <view class="md-comment-header">
+        <text class="title">最新评论</text>
+        <text class="count">{{ mvDetail.commentCount }}条</text>
+      </view>
+      <common-comment-item wx:for="{{commentDetail.comments}}" wx:for-item="item" wx:for-index="index" wx:key="index" commentVO="{{item}}">
+      </common-comment-item>
     </view>
-    <common-comment wx:for="{{commentDetail.comments}}" wx:for-item="item" wx:for-index="index" wx:key="index" commentVO="{{item}}">
-    </common-comment>
   </view>
 </view>

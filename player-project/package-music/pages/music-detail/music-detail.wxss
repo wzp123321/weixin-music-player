@@ -1,1 +1,62 @@
-/* pages/music-detail/music-detail.wxss */
+.music-detail {
+  width: 100%;
+  height: 100%;
+  padding-top: 36px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 64px;
+}
+.music-detail .md-cover {
+  text-align: center;
+}
+.music-detail .md-cover img {
+  width: 100%;
+}
+.music-detail .md-cover button {
+  width: 240px;
+  border-radius: 32px;
+  margin-top: 12px;
+}
+.music-detail .md-info h5 {
+  word-break: break-all;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  color: var(--color-text);
+  font-weight: 700;
+  margin-top: 42px;
+}
+.music-detail .md-info p {
+  cursor: pointer;
+  margin-right: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--music-color-font-primary);
+}
+.music-detail .md-info p.time {
+  font-size: 14px;
+}
+.music-detail .md-info p.time label {
+  color: var(--music-color-font-secondary);
+}
+.music-detail .md-info section button {
+  border-radius: 32px;
+  color: var(--music-color-font-primary);
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+.music-detail .md-info section button i {
+  margin-right: 6px;
+}
+.music-detail .md-info section button:not([primary]) {
+  background: #f2f2f2;
+  border: none;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.music-detail .md-info section button + button {
+  margin-left: 16px;
+}
