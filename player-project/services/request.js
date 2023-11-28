@@ -4,8 +4,16 @@ import {
 import {
   FGetStorageData
 } from '../utils/storage'
-// 请求拦截https://juejin.cn/post/6977247932051537933
-//封装request请求
+import {
+  responseInterceptor
+} from "../utils/interceptor";
+/**
+ * 封装request请求
+ * @param {*} url 
+ * @param {*} method 
+ * @param {*} data 
+ * @param {*} contentType 
+ */
 const sendRequest = (url, method = 'GET', data = {}, contentType) => {
   var token = FGetStorageData('token') || '';
   return new Promise(function (resolve, reject) {
@@ -30,20 +38,7 @@ const sendRequest = (url, method = 'GET', data = {}, contentType) => {
               success(res) {
                 if (res.confirm) {
                   wx.navigateTo({
-                    url: '../accredit/accredit',
-                  })
-                }
-              }
-            })
-            break;
-          case 403:
-            wx.showModal({
-              title: '温馨提示',
-              content: '请认证后再来操作！',
-              success(res) {
-                if (res.confirm) {
-                  wx.navigateTo({
-                    url: '../register/register',
+                    url: '/package-login/pages/login/login',
                   })
                 }
               }
@@ -53,6 +48,10 @@ const sendRequest = (url, method = 'GET', data = {}, contentType) => {
             resolve(res);
             break;
         }
+        // 调用拦截器对响应进行处理
+        const interceptedResponse = responseInterceptor(res);
+        // 处理拦截后的响应
+        console.log('处理拦截后的响应:', interceptedResponse);
       },
       fail: function (err) {
         reject(err);

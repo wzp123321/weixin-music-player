@@ -7,10 +7,8 @@
   <!-- 详细信息 -->
   <view class="cmc-info">
     <view class="cmc-info-count">
-      <view class="cmc-info-count-icon">
-        <i class="iconfont icon-24gf-play"></i>
-      </view>
-      <text>{{mvInfo.playCount ? mvInfo.playCount: 0}}</text>
+      <i class="iconfont icon-caozuo-bofang"></i>
+      <text>{{mvInfo.playCount ? utilWxs.formatNumber(mvInfo.playCount): 0}}</text>
     </view>
     <text>{{ utilWxs.formatDuration(mvInfo.duration) }}</text>
   </view>

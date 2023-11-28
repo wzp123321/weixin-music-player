@@ -17,6 +17,26 @@ var formatDuration = function (timeStamp) {
   return hourStr + minStr + ':' + secStr;
 }
 
+// 数字转换
+var formatNumber = function (value) {
+  var formatValue = '';
+  var unit = '';
+  var k = 10000,
+    sizes = ['', '万', '亿', '万亿'],
+    i;
+  if (value < k) {
+    formatValue = value
+    unit = ''
+  } else {
+    i = Math.floor(Math.log(value) / Math.log(k));
+
+    formatValue= ((value / Math.pow(k, i))).toFixed(2);
+    unit = sizes[i];
+  }
+  return formatValue + unit;
+}
+
 module.exports = {
-  formatDuration: formatDuration
+  formatDuration: formatDuration,
+  formatNumber: formatNumber
 };

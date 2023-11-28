@@ -7,6 +7,7 @@
   gap: var(--music-space-8);
   border-radius: var(--music-space-16);
   overflow: hidden;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
 }
 
 .common-mv-card .cmc-cover {
@@ -48,15 +49,9 @@
   display: flex;
   align-content: center;
   gap: var(--music-space-10);
-  
 }
 
-.common-mv-card .cmc-info .cmc-info-count  .cmc-info-count-icon {
-  padding: 2rpx;
-  border: 1rpx solid var(--music-color-default);
-}
 
-.common-mv-card .cmc-info .cmc-info-count  .cmc-info-count-icon .iconfont {
-  font-size: var(--music-font-12);
-  transform: scale(0.6);
+.common-mv-card .cmc-info .cmc-info-count .iconfont {
+  font-size: var(--music-font-36);
 }

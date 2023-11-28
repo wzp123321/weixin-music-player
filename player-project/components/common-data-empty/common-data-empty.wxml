@@ -1,4 +1,4 @@
 <view class="common-data-empty">
-  <van-image width="160" height="160" src="/assets/images/common/common-data-empty.png" />
+  <van-image width="160" height="160" src="/assets/images/common/common-data-empty.svg" />
   <text class="cde-message">暂无内容</text>
 </view>

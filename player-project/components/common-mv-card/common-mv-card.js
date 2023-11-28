@@ -9,17 +9,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    mvInfo: {
-      id: null,
-      artistName: '',
-      artistId: '',
-      duration: '',
-      picUrl: '',
-      playCount: '',
-      type: '',
-      name: '',
-      copywriter: ''
-    }
+    mvInfo: Object
   },
 
   /**
