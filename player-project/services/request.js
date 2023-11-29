@@ -50,8 +50,6 @@ const sendRequest = (url, method = 'GET', data = {}, contentType) => {
         }
         // 调用拦截器对响应进行处理
         const interceptedResponse = responseInterceptor(res);
-        // 处理拦截后的响应
-        console.log('处理拦截后的响应:', interceptedResponse);
       },
       fail: function (err) {
         reject(err);

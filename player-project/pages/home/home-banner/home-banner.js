@@ -21,8 +21,24 @@ Component({
     indicatorActiveColor: 'var(--music-color-primary)',
     bannerList: []
   },
-  created() {
-    this.queryBanner()
+  lifetimes:{
+    created: function() {
+      this.queryBanner()
+      // 在组件实例刚刚被创建时执行，该节点不能使用this.setData({}),
+      console.log('home-banner组件————————created')
+    },
+    attached: function() {
+      // 在组件实例进入页面节点树时执行，该节点可以开始使用this,setData({})
+      console.log('home-banner组件————————attached')
+    },
+    ready: function() {
+      // 在组件在视图层布局完成后执行
+      console.log('home-banner组件————————ready')
+    },
+    detached: function() {
+      // 在组件实例被从页面节点树移除时执行
+      console.log('home-banner组件————————detached')
+    },
   },
   /**
    * 组件的方法列表

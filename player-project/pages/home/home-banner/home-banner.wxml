@@ -2,7 +2,6 @@
 <import src="../home.skeleton.wxml" />
 <template is="skeleton" wx-if="{{loading}}" data="{{loading}}" />
 
-
 <view class="home-banner" data-skeleton-hide="loading" hidden="{{loading}}">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicatorColor="{{indicatorColor}}" indicatorActiveColor="{{indicatorActiveColor}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{bannerList}}" wx:key="imageUrl">
