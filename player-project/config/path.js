@@ -14,6 +14,7 @@ export const COMMON_REQUEST_PATH = {
     获取MV播放地址: '/mv/url',
     获取MV评论: '/comment/mv',
     查询歌曲详情: '/song/detail',
-    查询歌词: '/lyric'
+    查询歌词: '/lyric',
+    获取专辑详情: '/album'
   }
 }

@@ -13,11 +13,12 @@ var formatDuration = function (timeStamp) {
   var hourStr = hour > 0 ? (hour > 9 ? hour.toFixed(0) : 0 + hour.toFixed(0) + ':') : ''
   var minStr = min > 9 ? min.toFixed(0) : '0' + min.toFixed(0);
   var secStr = sec > 9 ? sec.toFixed(0) : 0 + sec.toFixed(0);
-
   return hourStr + minStr + ':' + secStr;
 }
-
-// 数字转换
+/**
+ * 数字转换
+ * @param value 
+ */
 var formatNumber = function (value) {
   var formatValue = '';
   var unit = '';
@@ -30,13 +31,71 @@ var formatNumber = function (value) {
   } else {
     i = Math.floor(Math.log(value) / Math.log(k));
 
-    formatValue= ((value / Math.pow(k, i))).toFixed(2);
+    formatValue = ((value / Math.pow(k, i))).toFixed(2);
     unit = sizes[i];
   }
   return formatValue + unit;
 }
+/**
+ * 日期格式化
+ * @param format 
+ * @param timestamp 
+ */
+var formatDate = function (format, timestamp) {
+  if (!timestamp) {
+    return timestamp
+  }
+
+  var date = getDate(parseInt(timestamp))
+  var year = date.getFullYear(),
+    month = date.getMonth() + 1,
+    day = date.getDate(),
+    hour = date.getHours(),
+    minute = date.getMinutes(),
+    second = date.getSeconds();
+  var re = getRegExp("[YyMmDdHhSs]+", 'g');
+  var str = format.replace(re, function (w) {
+
+    if (w == 'yy' || w == 'YY' || w == 'y' || w == 'Y') {
+      return year.toString().substring(2);
+
+    } else if (w == 'yyyy' || w == 'YYYY') {
+      return year;
+
+    } else if (w == 'MM') {
+      return month >= 10 ? month : '0' + month;
+
+    } else if (w == 'M') {
+      return month;
+
+    } else if (w == 'DD' || w == 'dd') {
+      return day >= 10 ? day : '0' + day;
+
+    } else if (w == 'D' || w == 'd') {
+      return day;
+
+    } else if (w == 'HH' || w == 'hh') {
+      return hour >= 10 ? hour : '0' + hour;
+
+    } else if (w == 'H' || w == 'h') {
+      return hour;
+
+    } else if (w == 'mm') {
+      return minute >= 10 ? minute : '0' + minute;
+
+    } else if (w == 'm') {
+      return minute;
+
+    } else if (w == 'ss' || w == 's') {
+      return second >= 10 ? second : '0' + second;
+    }
+  });
+
+  return str;
+}
 
 module.exports = {
   formatDuration: formatDuration,
-  formatNumber: formatNumber
+  formatNumber: formatNumber,
+  formatDate: formatDate
 };

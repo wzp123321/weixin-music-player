@@ -1,1 +1,65 @@
-/* package-music/pages/album-detail/album-detail.wxss */
+.album-detail {
+  display: grid;
+  grid-template-columns: 280px auto;
+  column-gap: 128px;
+  width: 100%;
+  height: 100%;
+  padding: 48px 0 16px;
+}
+.album-detail .album-detail--left {
+  position: relative;
+}
+.album-detail .album-detail--left::before {
+  content: url('../../assets/images/album/album-cover.png');
+  position: absolute;
+  right: -64px;
+  top: 0;
+}
+.album-detail .album-detail--left > img {
+  width: 100%;
+  height: auto;
+}
+.album-detail .album-detail--left > h5 {
+  font-size: 22px;
+  font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+  color: var(--color-text-title);
+}
+.album-detail .album-detail--left > p {
+  font-size: 14px;
+  color: #666;
+  line-height: 21px;
+  text-indent: 2em;
+}
+.album-detail .album-detail--right h5 {
+  overflow: hidden;
+  word-break: break-all;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.album-detail .album-detail--right p {
+  word-break: break-all;
+  margin-top: 14px;
+  font-size: 18px;
+  color: #666;
+  line-height: 25px;
+}
+.album-detail .album-detail--right span,
+.album-detail .album-detail--right label {
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  color: var(--music-color-font-secondary);
+}
+.album-detail .album-detail--right button {
+  font-size: 16px;
+}
+.album-detail .album-detail--right table tbody tr td img {
+  width: 32px;
+}

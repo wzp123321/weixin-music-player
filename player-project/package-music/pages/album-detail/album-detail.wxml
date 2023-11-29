@@ -1,2 +1,56 @@
-<!--package-music/pages/album-detail/album-detail.wxml-->
-<text>package-music/pages/album-detail/album-detail.wxml</text>
+<view id="album-detail">
+  <view class="album-detail--left">
+    <image src="albumDetail.info.picUrl" alt="" />
+    <view class="mt48 mb16">专辑简介</view>
+    <view>{{ albumDetail.info.description }}</view>
+  </view>
+  <view class="album-detail--right">
+    <view class="mt16 mb16">{{ albumDetail.info.name }}</view>
+    <view>{{albumDetail.info.artist.name}}</view>
+    <view class="flex-row-start-center mt12">
+      <view>发行时间：</view>
+      <view class="mr48">{{ formatDate(albumDetail.info.publishTime, 'YYYY-MM-DD') }}</view>
+      <view>评论：</view>
+      <view class="mr48">{{ albumDetail.info.info.commentCount }}</view>
+      <view>分享：</view>
+      <view>{{ albumDetail.info.info.shareCount }}</view>
+    </view>
+    <button radius primary style="width: 180px" class="mt12">
+      <i class="iconfont icon-24gf-play mr6"></i>播放全部歌曲
+    </button>
+
+    <table style="width: 100%">
+      <thead>
+        <tr>
+          <th style="width: 10%">序号</th>
+          <th style="width: 30%">歌曲</th>
+          <th style="width: 30%">专辑</th>
+          <th style="width: 30%">时长</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(item, index) in albumDetail.songs" :key="'song_' + index">
+          <td style="width: 10%" class="sort">
+            <view>{{ index + 1 }}</view>
+            <image :src="item.al.picUrl" alt="" />
+          </td>
+          <td ellipsis style="width: 30%">
+            <view class="mname">{{ item.name }}</view>
+            <view class="tag">无损</view>
+            <view class="mv">mv</view>
+          </td>
+          <td ellipsis style="width: 30%">{{ item.al.name }}</td>
+          <td ellipsis style="width: 30%">
+            <view class="dt">{{ formatDuration(item.dt) }}</view>
+            <view class="op-btn flex-row-start-center">
+              <i class="iconfont icon-24gf-play" bind:tap="onPlay(index)"></i>
+              <i class="iconfont icon-tianjia"></i>
+              <i class="iconfont icon-jushoucang"></i>
+              <i class="iconfont icon-xiazai"></i>
+            </view>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </view>
+</view>

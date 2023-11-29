@@ -15,19 +15,5 @@
         关注
       </view>
     </view>
-    <view class="sd-header-achievement">
-      <view class="sd-header-achievement-item">
-        <i class="iconfont icon-music"></i>
-        <text>{{ singerInfo.musicSize }}</text>
-      </view>
-      <view class="sd-header-achievement-item">
-        <i class="iconfont icon-bofangMV"></i>
-        <text>{{ singerInfo.mvSize }}</text>
-      </view>
-      <view class="sd-header-achievement-item">
-        <i class="iconfont icon-24gl-videoAlbum2"></i>
-        <text> {{ singerInfo.albumSize }}</text>
-      </view>
-    </view>
   </view>
 </view> 
