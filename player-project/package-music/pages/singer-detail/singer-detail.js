@@ -7,7 +7,6 @@ import {
 } from '../../../config/path'
 
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -23,7 +22,9 @@ Page({
       musicSize: 0, // 作品数
       mvSize: 0, // mv
       albumSize: 0, // 专辑
-    }
+    },
+    loadErrorFlag: false,
+    loading: true
   },
   /**
    * 查询歌手详情
@@ -32,16 +33,22 @@ Page({
     try {
       const res = await sendRequest(`${COMMON_REQUEST_PATH.歌手.歌手详情}?id=${this.data.id}`)
       console.log(res)
+      if(res.data.code === 200){
+        this.setData({
+          singerInfo: {
+            briefDesc: res?.data?.artist?.briefDesc,
+            img1v1Url: res?.data?.artist?.img1v1Url,
+            name: res?.data?.artist?.name,
+            picUrl: res?.data?.artist?.picUrl,
+            mvSize: res?.data?.artist?.mvSize,
+            musicSize: res?.data?.artist?.musicSize,
+            albumSize: res?.data?.artist?.albumSize,
+          },
+        })
+      }
       this.setData({
-        singerInfo: {
-          briefDesc: res?.data?.artist?.briefDesc,
-          img1v1Url: res?.data?.artist?.img1v1Url,
-          name: res?.data?.artist?.name,
-          picUrl: res?.data?.artist?.picUrl,
-          mvSize: res?.data?.artist?.mvSize,
-          musicSize: res?.data?.artist?.musicSize,
-          albumSize: res?.data?.artist?.albumSize,
-        }
+        loading: false,
+        loadErrorFlag: res.data.code !== 200
       })
     } catch (error) {
       console.log(error)

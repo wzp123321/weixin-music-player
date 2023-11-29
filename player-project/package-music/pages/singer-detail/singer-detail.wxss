@@ -4,9 +4,27 @@
 .singer-detail {
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
 }
 
-.singer-detail .sd-header {
+.singer-detail .van-nav-bar {
+  background-color: var(--music-color-font-border);
+}
+
+.singer-detail .van-nav-bar .van-nav-bar__title,
+.iconfont.icon-xiangzuo {
+  color: var(--music-color-gray) !important;
+}
+
+.singer-detail .sd-container {
+  width: 100%;
+  flex: auto;
+}
+
+.singer-detail .sd-container .sd-container-header {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,29 +32,27 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 540rpx;
-  background-color: var(--music-color-font-secondary);
+  height: 480rpx;
+  background-color: var(--music-color-font-border);
 }
 
-.singer-detail .sd-header .sd-header-cover {
+.singer-detail .sd-container-header .sd-container-header-cover {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 100%;
   height: 100%;
 }
 
-.singer-detail .sd-header .sd-header-info {
+.singer-detail .sd-container-header .sd-container-header-info {
   display: flex;
   justify-content: space-between;
   padding: 0 var(--music-space-40);
-  margin-top: var(--music-space-250);
+  margin-top: var(--music-space-200);
 }
 
-.singer-detail .sd-header .sd-header-info .sd-header-info-name {
+.singer-detail .sd-container-header .sd-container-header-info .sd-container-header-info-name {
   display: flex;
   flex-direction: column;
   color: var(--music-color-default);
@@ -45,7 +61,7 @@
 }
 
 
-.singer-detail .sd-header .sd-header-info .sd-header-info-attention{
+.singer-detail .sd-container-header .sd-container-header-info .sd-container-header-info-attention {
   width: var(--music-space-100);
   height: var(--music-space-44);
   line-height: var(--music-space-44);
@@ -56,14 +72,14 @@
   color: var(--music-color-gray);
 }
 
-.singer-detail .sd-header .sd-header-achievement {
+.singer-detail .sd-container-header .sd-container-header-achievement {
   display: flex;
   gap: var(--music-space-48);
   justify-content: center;
 }
 
 
-.singer-detail .sd-header .sd-header-achievement .sd-header-achievement-item {
+.singer-detail .sd-container-header .sd-container-header-achievement .sd-container-header-achievement-item {
   position: relative;
   display: flex;
   justify-content: center;
@@ -71,7 +87,7 @@
   gap: var(--music-space-8);
 }
 
-.singer-detail .sd-header .sd-header-achievement .sd-header-achievement-item:not(:last-child)::before {
+.singer-detail .sd-container-header .sd-container-header-achievement .sd-container-header-achievement-item:not(:last-child)::before {
   content: '';
   width: 2rpx;
   height: var(--music-space-32);
@@ -83,18 +99,18 @@
   transform: translateY(-50%);
 }
 
-.singer-detail .sd-header .sd-header-btn {
+.singer-detail .sd-container-header .sd-container-header-btn {
   display: flex;
   justify-content: center;
   gap: var(--music-space-16);
   padding: var(--music-space-16) var(--music-space-32);
 }
 
-.singer-detail .sd-header .sd-header-btn van-button {
+.singer-detail .sd-container-header .sd-container-header-btn van-button {
   flex: 1;
 }
 
-.singer-detail .sd-header .sd-header-btn van-button .van-button {
+.singer-detail .sd-container-header .sd-container-header-btn van-button .van-button {
   width: 100%;
   padding: 0;
 }

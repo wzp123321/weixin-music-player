@@ -1,19 +1,20 @@
-<!-- <common-data-empty></common-data-empty> -->
-<!-- <common-load-error></common-load-error> -->
-<!-- <common-network-error></common-network-error> -->
-<!-- <common-search-empty></common-search-empty> -->
-<view class="singer-detail">
+<view class="singer-detail" style="background-image: url({{singerInfo.picUrl}});">
+  <common-nav-bar title="{{singerInfo.name}}" transparentFlag="{{true}}"></common-nav-bar>
   <!-- 详情 -->
-  <view class="sd-header">
-    <view class="sd-header-cover" style="background-image: url({{singerInfo.picUrl}});"></view>
-    <view class="sd-header-info">
-      <view class="sd-header-info-name">
-        <van-image src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
-        <view>{{ singerInfo.name }}</view>
-      </view>
-      <view class="sd-header-info-attention">
-        关注
+  <view class="sd-container" wx-if="{{!loadErrorFlag && !loading}}">
+    <view class="sd-container-header">
+      <view class="sd-container-header-info">
+        <view class="sd-container-header-info-name">
+          <van-image src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
+          <view>{{ singerInfo.name }}</view>
+        </view>
+        <view class="sd-container-header-info-attention">
+          关注
+        </view>
       </view>
     </view>
   </view>
-</view> 
+  <view class="sd-container" wx-if="{{loadErrorFlag && !loading}}">
+    <common-load-error></common-load-error>
+  </view>
+</view>

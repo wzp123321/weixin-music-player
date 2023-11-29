@@ -1,0 +1,3 @@
+<van-nav-bar class="common-nav-bar" border="{{false}}" title="{{ title }}">
+  <i slot="left" class="iconfont icon-xiangzuo" bind:tap="handleBack"></i>
+</van-nav-bar>
