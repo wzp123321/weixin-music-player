@@ -1,4 +1,4 @@
-<view class="music-detail" id="music-detail">
+<page-container class="music-detail">
   <view class="md-cover">
     <van-image width="320" height="320" src="{{musicDetail.al.picUrl}}" />
     <button primary><i class="iconfont icon-xiazai mr6"></i>下载这首歌</button>
@@ -18,4 +18,4 @@
       <button><i class="iconfont icon-pinglun"></i><span>评论</span></button>
     </view>
   </view>
-</view>
+</page-container>

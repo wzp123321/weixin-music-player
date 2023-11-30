@@ -23,6 +23,8 @@ Page({
       mvSize: 0, // mv
       albumSize: 0, // 专辑
     },
+    navList: [], //tab
+    selectedCode: '',
     loadErrorFlag: false,
     loading: true
   },
@@ -32,8 +34,28 @@ Page({
   async querySingerDetail() {
     try {
       const res = await sendRequest(`${COMMON_REQUEST_PATH.歌手.歌手详情}?id=${this.data.id}`)
-      console.log(res)
-      if(res.data.code === 200){
+      if (res.data.code === 200) {
+        const navList = [{
+            code: '1',
+            name: '主页',
+            count: null
+          },
+          {
+            code: '2',
+            name: '单曲',
+            count: res.data.artist.musicSize
+          },
+          {
+            code: '3',
+            name: '专辑',
+            count: res.data.artist.albumSize
+          },
+          {
+            code: '4',
+            name: '视频',
+            count: res.data.artist.mvSize
+          }
+        ]
         this.setData({
           singerInfo: {
             briefDesc: res?.data?.artist?.briefDesc,
@@ -44,6 +66,8 @@ Page({
             musicSize: res?.data?.artist?.musicSize,
             albumSize: res?.data?.artist?.albumSize,
           },
+          navList,
+          selectedCode: '1'
         })
       }
       this.setData({
@@ -55,11 +79,21 @@ Page({
     }
   },
   /**
+   * 切换tab
+   * @param {*} code 
+   */
+  handleCodeChange(code) {
+    this.setData({
+      selectedCode: code
+    })
+  },
+  /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
     this.setData({
-      id: options.id,
+      // id: options.id,
+      id: 2116,
       name: options.name,
       loadErrorFlag: false
     });

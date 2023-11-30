@@ -1,0 +1,5 @@
+.sd-main {
+  width: 100%;
+  background-color: var(--music-color-default);
+  padding: var(--music-space-32);
+}

@@ -1,1 +1,3 @@
-<view class="user common-has-tabbar"></view>
+<page-container class="user common-has-tabbar">
+
+</page-container>
