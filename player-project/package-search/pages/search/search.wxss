@@ -1,1 +1,10 @@
-/* pages/search/search.wxss */
+.search{
+  width: 100%;
+  height: 100%;
+  padding: var(--music-space-16);
+  box-sizing: border-box;
+}
+
+.search .van-search {
+  padding-left: 0;
+}

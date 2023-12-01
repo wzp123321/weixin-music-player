@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "package-music/pages/singer-detail/singer-detail",
+  "entryPagePath": "package-search/pages/search/search",
   "pages": [
     "pages/home/home",
     "pages/user/user"
@@ -59,6 +59,7 @@
     "van-col": "@vant/weapp/col/index",
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index",
+    "van-search": "@vant/weapp/search/index",
     "page-container": "components/page-container/page-container",
     "sub-module": "components/sub-module/sub-module",
     "common-data-empty": "components/common-data-empty/common-data-empty",

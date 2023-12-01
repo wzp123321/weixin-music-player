@@ -1,6 +1,8 @@
 // package-music/pages/singer-detail/sd-nav-bar/sd-nav-bar.js
 Component({
-
+  options: {
+    styleIsolation: "shared"
+  },
   /**
    * 组件的属性列表
    */

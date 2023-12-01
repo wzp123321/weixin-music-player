@@ -1,0 +1,13 @@
+<view class="search-initial">
+  <view class="si-record-title">
+    搜索记录
+  </view>
+  <view class="si-record-list">
+  <!-- <text wx:for=></text> -->
+  </view>
+  <view class="si-record-content"></view>
+  <view class="si-hot-title">
+    热搜榜单
+  </view>
+  <view class="si-hot-content"></view>
+</view>

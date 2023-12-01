@@ -1,0 +1,10 @@
+.search-initial{
+  width: 100%;
+  height: 100%;
+}
+
+.search-initial .si-record-title{
+  font-size: var(--music-font-36);
+  color: var(--music-color-font-title);
+  font-weight: 600;
+}
