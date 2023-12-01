@@ -1,0 +1,6 @@
+<view class="sd-main">
+  <!-- 基本信息 -->
+  <view class="sd-main-container">
+    <view class="sd-main-container-title">基本信息</view>
+  </view>
+</view>

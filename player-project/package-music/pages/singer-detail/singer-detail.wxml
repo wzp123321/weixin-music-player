@@ -1,20 +1,29 @@
-<view class="singer-detail" style="background-image: url({{singerInfo.picUrl}});">
-  <common-nav-bar title="{{singerInfo.name}}" transparentFlag="{{true}}"></common-nav-bar>
-  <!-- 详情 -->
-  <view class="sd-container" wx-if="{{!loadErrorFlag && !loading}}">
-    <view class="sd-container-header">
-      <view class="sd-container-header-info">
-        <view class="sd-container-header-info-name">
-          <van-image src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
-          <view>{{ singerInfo.name }}</view>
-        </view>
-        <view class="sd-container-header-info-attention">
-          关注
+<page-container>
+  <view class="singer-detail" style="background-image: url({{singerInfo.picUrl}});">
+    <common-nav-bar title="{{singerInfo.name}}" transparentFlag="{{true}}"></common-nav-bar>
+    <!-- 详情 -->
+    <view class="sd-container" wx-if="{{!loadErrorFlag && !loading}}">
+      <!-- 头部 -->
+      <view class="sd-container-header">
+        <view class="sd-container-header-info">
+          <view class="sd-container-header-info-name">
+            <van-image src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
+            <view>{{ singerInfo.name }}</view>
+          </view>
+          <view class="sd-container-header-info-attention">
+            关注
+          </view>
         </view>
       </view>
+      <!-- nav-bar -->
+      <sd-nav-bar dataList="{{navList}}" selectedCode="{{selectedCode}}" bind:change="handleCodeChange">
+        <!-- 主页 -->
+        <sd-main wx:if="{{selectedCode === '1'}}"></sd-main>
+      </sd-nav-bar>
+    </view>
+    <view class="sd-container" wx-if="{{loadErrorFlag && !loading}}">
+      <common-load-error></common-load-error>
     </view>
   </view>
-  <view class="sd-container" wx-if="{{loadErrorFlag && !loading}}">
-    <common-load-error></common-load-error>
-  </view>
-</view>
+
+</page-container>

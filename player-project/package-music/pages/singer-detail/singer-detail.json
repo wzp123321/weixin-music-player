@@ -1,4 +1,7 @@
 {
-    "usingComponents": {},
-    "navigationStyle": "custom"
+  "usingComponents": {
+    "sd-nav-bar": "./sd-nav-bar/sd-nav-bar",
+    "sd-main": "./sd-main/sd-main"
+  },
+  "navigationStyle": "custom"
 }

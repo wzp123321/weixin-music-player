@@ -33,6 +33,7 @@ page {
   /* 字体大小 */
   --music-font-18: 18rpx;
   --music-font-20: 20rpx;
+  --music-font-22: 22rpx;
   --music-font-24: 24rpx;
   --music-font-28: 28rpx;
   --music-font-30: 30rpx;
@@ -79,6 +80,7 @@ page {
   --music-space-150: 150rpx;
   --music-space-160: 160rpx;
   --music-space-200: 200rpx;
+  --music-space-240: 240rpx;
   --music-space-250: 250rpx;
   --music-space-300: 300rpx;
   --music-space-360: 360rpx;

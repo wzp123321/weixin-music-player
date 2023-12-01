@@ -1,7 +1,4 @@
 /* components/page-container/page-container.wxss */
 .page-container {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
 }

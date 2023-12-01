@@ -1,2 +1,2 @@
 <!--package-music/pages/music-rank/music-rank.wxml-->
-<text>package-music/pages/music-rank/music-rank.wxml</text>
+<page-container>package-music/pages/music-rank/music-rank.wxml</page-container>
