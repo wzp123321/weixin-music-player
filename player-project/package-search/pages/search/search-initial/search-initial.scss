@@ -1,0 +1,66 @@
+.search-initial {
+  width: 100%;
+  height: 100%;
+
+  .si-record-title {
+    font-size: var(--music-font-36);
+    color: var(--music-color-font-title);
+    font-weight: 600;
+    margin-top: 16rpx;
+  }
+
+  .si-record-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24rpx 16rpx;
+    gap: 16rpx;
+    margin-bottom: 36rpx;
+
+    .si-record-list-item {
+      padding: 8rpx 32rpx;
+      background-color: var(--music-color-default);
+      border-radius: 32rpx;
+      font-size: 28rpx;
+      color: var(--music-color-font-title);
+    }
+  }
+
+  .si-hot-title {
+    font-size: 28rpx;
+    color: var(--music-text-color-placeholder);
+    margin-bottom: 36rpx;
+  }
+
+  .si-hot-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32rpx;
+    padding-left: 16rpx;
+    font-size: 28rpx;
+
+    .si-hot-list-item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 24rpx;
+
+      .si-hot-list-item-sort {
+        font-size: 36rpx;
+        color: var(--music-text-color-secondary);
+      }
+
+      &:nth-child(1) .si-hot-list-item-sort{
+        color: var(--music-color-danger);
+      }
+
+      &:nth-child(2) .si-hot-list-item-sort{
+        color: var(--music-color-warning);
+      }
+
+      &:nth-child(3) .si-hot-list-item-sort{
+        color: var(--music-rate-active);
+      }
+    }
+
+  }
+}
