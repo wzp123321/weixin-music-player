@@ -1,0 +1,24 @@
+@import "../../../../assets/iconfont/iconfont.wxss" ;
+
+.search-suggest {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.search-suggest .search-suggest-item {
+  display: flex;
+  align-items: center;
+  gap: 32rpx;
+  padding-bottom: 16rpx;
+  border-bottom: 1rpx solid var(--music-color-font-border);
+  color: var(--music-color-font-primary);
+}
+
+.search-suggest .search-suggest-item .iconfont {
+  font-size: 32rpx;
+}
+
+.search-suggest .search-suggest-item .search-suggest-item-content {
+  font-size: 28rpx;
+}

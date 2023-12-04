@@ -7,29 +7,27 @@
   font-size: var(--music-font-36);
   color: var(--music-color-font-title);
   font-weight: 600;
-  margin-top: 16rpx;
+  margin: 36rpx 0;
+}
+
+.search-initial .si-hot-title {
+  margin-top: 54rpx;
 }
 
 .search-initial .si-record-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 24rpx 16rpx;
+  padding: 0 8rpx;
   gap: 16rpx;
-  margin-bottom: 36rpx;
+  margin-bottom: 80rpx;
 }
 
 .search-initial .si-record-list .si-record-list-item {
   padding: 8rpx 32rpx;
-  background-color: var(--music-color-default);
+  background-color: var(--music-border-color);
   border-radius: 32rpx;
   font-size: 28rpx;
   color: var(--music-color-font-title);
-}
-
-.search-initial .si-hot-title {
-  font-size: 28rpx;
-  color: var(--music-text-color-placeholder);
-  margin-bottom: 36rpx;
 }
 
 .search-initial .si-hot-list {
@@ -43,12 +41,15 @@
 .search-initial .si-hot-list .si-hot-list-item {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  gap: 24rpx;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36rpx;
+  color: var(--music-color-font-title);
 }
 
 .search-initial .si-hot-list .si-hot-list-item .si-hot-list-item-sort {
   font-size: 36rpx;
+  font-weight: 600;
   color: var(--music-text-color-secondary);
 }
 
@@ -62,4 +63,31 @@
 
 .search-initial .si-hot-list .si-hot-list-item:nth-child(3) .si-hot-list-item-sort {
   color: var(--music-rate-active);
+}
+
+.search-initial .si-hot-list .si-hot-list-item .si-hot-list-item-content {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  gap: 10rpx;
+}
+
+.search-initial .si-hot-list .si-hot-list-item .si-hot-list-item-content .header {
+  display: flex;
+  gap: 24rpx;
+}
+
+.search-initial .si-hot-list .si-hot-list-item .si-hot-list-item-content .header .icon {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.search-initial .si-hot-list .si-hot-list-item .si-hot-list-item-content .content {
+  font-size: 22rpx;
+  color: var(--music-color-info);
+}
+
+.search-initial .si-hot-list .si-hot-list-item .si-hot-list-item-score {
+  font-size: 20rpx;
+  color: var(--music-color-info);
 }

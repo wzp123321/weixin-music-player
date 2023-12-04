@@ -6,29 +6,27 @@
     font-size: var(--music-font-36);
     color: var(--music-color-font-title);
     font-weight: 600;
-    margin-top: 16rpx;
+    margin: 36rpx 0;
+  }
+
+  .si-hot-title {
+    margin-top: 54rpx;
   }
 
   .si-record-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 24rpx 16rpx;
+    padding: 0 8rpx;
     gap: 16rpx;
-    margin-bottom: 36rpx;
+    margin-bottom: 80rpx;
 
     .si-record-list-item {
       padding: 8rpx 32rpx;
-      background-color: var(--music-color-default);
+      background-color: var(--music-border-color);
       border-radius: 32rpx;
       font-size: 28rpx;
       color: var(--music-color-font-title);
     }
-  }
-
-  .si-hot-title {
-    font-size: 28rpx;
-    color: var(--music-text-color-placeholder);
-    margin-bottom: 36rpx;
   }
 
   .si-hot-list {
@@ -41,26 +39,55 @@
     .si-hot-list-item {
       display: flex;
       flex-direction: row;
-      align-items: flex-end;
-      gap: 24rpx;
+      align-items: center;
+      justify-content: space-between;
+      gap: 36rpx;
+      color: var(--music-color-font-title);
 
       .si-hot-list-item-sort {
         font-size: 36rpx;
+        font-weight: 600;
         color: var(--music-text-color-secondary);
       }
 
-      &:nth-child(1) .si-hot-list-item-sort{
+      &:nth-child(1) .si-hot-list-item-sort {
         color: var(--music-color-danger);
       }
 
-      &:nth-child(2) .si-hot-list-item-sort{
+      &:nth-child(2) .si-hot-list-item-sort {
         color: var(--music-color-warning);
       }
 
-      &:nth-child(3) .si-hot-list-item-sort{
+      &:nth-child(3) .si-hot-list-item-sort {
         color: var(--music-rate-active);
       }
-    }
 
+      .si-hot-list-item-content {
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        gap: 10rpx;
+
+        .header {
+          display: flex;
+          gap: 24rpx;
+
+          .icon {
+            width: 36rpx;
+            height: 36rpx;
+          }
+        }
+
+        .content {
+          font-size: 22rpx;
+          color: var(--music-color-info);
+        }
+      }
+
+      .si-hot-list-item-score {
+        font-size: 20rpx;
+        color: var(--music-color-info);
+      }
+    }
   }
 }

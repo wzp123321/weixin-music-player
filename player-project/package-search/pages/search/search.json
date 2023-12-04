@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "search-initial": "./search-initial/search-initial"
+    "search-initial": "./search-initial/search-initial",
+    "search-suggest": "./search-suggest/search-suggest",
+    "search-nav-bar": "./search-nav-bar/search-nav-bar"
   }
 }

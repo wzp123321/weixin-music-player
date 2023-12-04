@@ -1,6 +1,9 @@
 <view class="search">
   <van-search value="{{ searchLabel }}" focus="{{false}}" placeholder="请输入搜索关键词" show-action bind:search="handleSearch" bind:change="handleChange" bind:cancel="handleCancel" />
   <!-- 初始进入 -->
-  <search-initial wx:if="{{!searchLabel && !searchFlag}}" bind:search="handleSearch"></search-initial>
-
+  <search-initial wx:if="{{!searchFlag && !inputFlag}}" bind:search="handleSearch"></search-initial>
+  <!-- 搜索建议 -->
+  <search-suggest wx:if="{{!searchFlag && inputFlag}}" suggestList="{{suggestList}}" bind:search="handleSearch"></search-suggest>
+  <!-- 搜索模块 -->
+  <search-nav-bar  wx:if="{{searchFlag && !inputFlag}}" searchLabel="{{searchLabel}}"></search-nav-bar>
 </view>
