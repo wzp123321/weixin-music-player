@@ -1,9 +1,5 @@
 {
     "description": "项目配置文件",
-    "packOptions": {
-        "ignore": [],
-        "include": []
-    },
     "skeleton-config": {
         "global": {
             "loading": "spin",
@@ -76,12 +72,10 @@
                 "packageJsonPath": "./package.json",
                 "miniprogramNpmDistDir": "./"
             }
-        ]
+        ],
+        "ignoreUploadUnusedFiles": true
     },
     "compileType": "miniprogram",
-    "libVersion": "2.20.2",
-    "appid": "wx4453cb21d5f72c89",
-    "projectname": "TDesign",
     "simulatorType": "wechat",
     "simulatorPluginLibVersion": {},
     "condition": {
@@ -423,5 +417,11 @@
     "editorSetting": {
         "tabIndent": "insertSpaces",
         "tabSize": 4
-    }
+    },
+    "libVersion": "2.20.2",
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "appid": "wx4453cb21d5f72c89"
 }
