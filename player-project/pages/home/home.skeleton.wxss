@@ -1,7 +1,7 @@
 /*
-此文件为开发者工具生成，生成时间: 2023/11/26下午8:13:52
+此文件为开发者工具生成，生成时间: 2023/12/4下午2:51:59
 
-在 C:\workspace\private\weixin\weixin-music-player\player-project\pages\home\home.wxss 中引入样式
+在 D:\workspace\private\weixin\weixin-music-player\player-project\pages\home\home.wxss 中引入样式
 ```
 @import "./home.skeleton.wxss";
 ```
@@ -11,103 +11,9 @@
 .sk-transparent {
     color: transparent !important;
   }
-.sk-text-14-2857-625 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 44.8000rpx;
-    position: relative !important;
-  }
-.sk-text {
-    background-origin: content-box !important;
-    background-clip: content-box !important;
-    background-color: transparent !important;
-    color: transparent !important;
-    background-repeat: repeat-y !important;
-  }
-.sk-text-14-2857-925 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 44.8000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-23 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 44.8000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-396 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 44.8000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-506 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 50.4000rpx;
-    position: relative !important;
-  }
-.sk-text-10-0000-816 {
-    background-image: linear-gradient(transparent 10.0000%, #EEEEEE 0%, #EEEEEE 90.0000%, transparent 0%) !important;
-    background-size: 100% 40.0000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-269 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 42.0000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-764 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 42.0000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-875 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 42.0000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-559 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 42.0000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-977 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 42.0000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-89 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 42.0000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-931 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 42.0000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-36 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 42.0000rpx;
-    position: relative !important;
-  }
-.sk-text-14-2857-936 {
-    background-image: linear-gradient(transparent 14.2857%, #EEEEEE 0%, #EEEEEE 85.7143%, transparent 0%) !important;
-    background-size: 100% 42.0000rpx;
-    position: relative !important;
-  }
 .sk-image {
     background: #EFEFEF !important;
   }
-.sk-pseudo::before, .sk-pseudo::after {
-      background: #EFEFEF !important;
-      background-image: none !important;
-      color: transparent !important;
-      border-color: transparent !important;
-    }
-.sk-pseudo-rect::before, .sk-pseudo-rect::after {
-      border-radius: 0 !important;
-    }
-.sk-pseudo-circle::before, .sk-pseudo-circle::after {
-      border-radius: 50% !important;
-    }
 .sk-container {
     background-color: transparent;
   }

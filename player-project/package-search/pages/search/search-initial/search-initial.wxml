@@ -3,11 +3,17 @@
     搜索记录
   </view>
   <view class="si-record-list">
-  <!-- <text wx:for=></text> -->
+    <view class="si-record-list-item" wx:for="{{historyList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" bind:tap="handleChange" data-label="{{item}}">
+      {{item}}
+    </view>
   </view>
-  <view class="si-record-content"></view>
   <view class="si-hot-title">
     热搜榜单
   </view>
-  <view class="si-hot-content"></view>
+  <view class="si-hot-list">
+    <view class="si-hot-list-item" wx:for="{{hotSearchList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" bind:tap="handleChange" data-label="{{item}}">
+      <view class="si-hot-list-item-sort">{{ idx + 1 }}</view>
+      <view>{{item}}</view>
+    </view>
+  </view>
 </view>

@@ -11,7 +11,20 @@ Page({
   /**
    * 搜索
    */
-  handleSearch(){},
+  handleSearch(event){
+    this.setData({
+      searchLabel: event.detail
+    })
+  },
+  /**
+   * 取消搜索
+   */
+  handleCancel(){
+    this.setData({
+      searchFlag: false,
+      searchLabel: '',
+    })
+  },
   /**
    * 输入内容变化时触发
    */

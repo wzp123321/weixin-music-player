@@ -3,8 +3,15 @@
   height: 100%;
   padding: var(--music-space-16);
   box-sizing: border-box;
+  background-color: var(--music-fill-color);
 }
 
 .search .van-search {
   padding-left: 0;
+  background-color: var(--music-fill-color) !important;
+}
+
+.search .van-search .van-search__content {
+  background-color: var(--music-color-default);
+  border-radius: 32rpx;
 }

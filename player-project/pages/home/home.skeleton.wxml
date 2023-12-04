@@ -1,14 +1,14 @@
 <!--
-此文件为开发者工具生成，生成时间: 2023/11/26下午8:13:52
+此文件为开发者工具生成，生成时间: 2023/12/4下午2:51:59
 使用方法：
-在 C:\workspace\private\weixin\weixin-music-player\player-project\pages\home\home.wxml 引入模板
+在 D:\workspace\private\weixin\weixin-music-player\player-project\pages\home\home.wxml 引入模板
 
 ```
 <import src="home.skeleton.wxml"/>
 <template is="skeleton" wx:if="{{loading}}" />
 ```
 
-在 C:\workspace\private\weixin\weixin-music-player\player-project\pages\home\home.wxss 中引入样式
+在 D:\workspace\private\weixin\weixin-music-player\player-project\pages\home\home.wxss 中引入样式
 ```
 @import "./home.skeleton.wxss";
 ```
@@ -17,94 +17,67 @@
 -->
 <template name="skeleton">
   <view class="sk-container">
-    <view is="components/page-container/page-container" class="home">
-      <scroll-view class="container--page-container" scroll-y="true">
+    <view is="components/page-container/page-container" class="home common-has-tabbar">
+      <scroll-view enable-flex="true" scroll-y="true" style="height: 100%;display: flex; flex-direction: column;">
         <view is="pages/home/home-banner/home-banner">
-          <view class="banner--home-banner" hidden="{{loading}}">
-            <swiper duration="500" indicator-dots="true" indicator-active-color="var(--music-color-primary)" indicator-color="var(--music-color-default)" interval="2000" current="0" autoplay="false">
-              <swiper-item style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
-                <image class="banner--home-banner-image sk-image" mode="true"></image>
-              </swiper-item>
-            </swiper>
-          </view>
-        </view>
-        <view is="pages/home/home-tabBar/home-tabBar">
-          <view class="tabBar--home-tabBar">
-            <view class="tabBar--home-tabBar-item">
-              <view class="tabBar--home-tabBar-item-icon" style="background-color: #5074b4;">
-                <i class="tabBar--iconfont tabBar--icon-sousuo sk-pseudo sk-pseudo-circle"></i>
-              </view>
-              <text class="sk-transparent sk-text-14-2857-625 sk-text">搜索</text>
+          <view class="banner--sk-container">
+            <view class="banner--home">
+              <scroll-view class="banner--container--page-container" scroll-y="true">
+                <view></view>
+                <view>
+                  <view class="banner--tabBar--home-tabBar">
+                    <view class="banner--tabBar--home-tabBar-item">
+                      <view class="banner--tabBar--home-tabBar-item-icon" style="background-color: #5074b4;">
+                        <i class="banner--tabBar--iconfont banner--tabBar--icon-sousuo banner--sk-pseudo banner--sk-pseudo-circle"></i>
+                      </view>
+                      <text class="banner--sk-transparent banner--sk-text-14-2857-625 banner--sk-text sk-transparent sk-image">搜索</text>
+                    </view>
+                    <view class="banner--tabBar--home-tabBar-item">
+                      <view class="banner--tabBar--home-tabBar-item-icon" style="background-color: #83bef0;">
+                        <i class="banner--tabBar--iconfont banner--tabBar--icon-24gf-play banner--sk-pseudo banner--sk-pseudo-circle"></i>
+                      </view>
+                      <text class="banner--sk-transparent banner--sk-text-14-2857-925 banner--sk-text sk-transparent sk-image">精选视频</text>
+                    </view>
+                    <view class="banner--tabBar--home-tabBar-item">
+                      <view class="banner--tabBar--home-tabBar-item-icon" style="background-color: #e88b6c;">
+                        <i class="banner--tabBar--iconfont banner--tabBar--icon-remenx banner--sk-pseudo banner--sk-pseudo-circle"></i>
+                      </view>
+                      <text class="banner--sk-transparent banner--sk-text-14-2857-23 banner--sk-text sk-transparent sk-image">热门歌曲</text>
+                    </view>
+                    <view class="banner--tabBar--home-tabBar-item">
+                      <view class="banner--tabBar--home-tabBar-item-icon" style="background-color: #83bef0;">
+                        <i class="banner--tabBar--iconfont banner--tabBar--icon-fenlei banner--sk-pseudo banner--sk-pseudo-circle"></i>
+                      </view>
+                      <text class="banner--sk-transparent banner--sk-text-14-2857-396 banner--sk-text sk-transparent sk-image">分类</text>
+                    </view>
+                  </view>
+                </view>
+                <view>
+                  <view class="banner--module--sub-module">
+                    <view class="banner--module--sm-header">
+                      <text class="banner--sk-transparent banner--sk-text-14-2857-506 banner--sk-text sk-transparent sk-image">热门歌手</text>
+                      <view class="banner--module--sm-header-more">
+                        <text class="banner--sk-transparent banner--sk-text-10-0000-816 banner--sk-text sk-transparent sk-image">更多</text>
+                        <i class="banner--module--iconfont banner--module--icon-xiangyou banner--sk-pseudo banner--sk-pseudo-circle"></i>
+                      </view>
+                    </view>
+                    <scroll-view scroll-x="true">
+                      <view class="banner--home-container">
+                        <view class="banner--singer-template" data-id="3684" data-name="林俊杰">
+                          <image class="banner--sk-image sk-image"></image>
+                          <text class="banner--sk-transparent banner--sk-text-14-2857-269 banner--sk-text sk-transparent sk-image" style="background-position-x: 50%;">林俊杰</text>
+                        </view>
+                        <view class="banner--singer-template" data-id="2116" data-name="陈奕迅">
+                          <image class="banner--sk-image sk-image"></image>
+                          <text class="banner--sk-transparent banner--sk-text-14-2857-764 banner--sk-text sk-transparent sk-image" style="background-position-x: 50%;">陈奕迅</text>
+                        </view>
+                      </view>
+                    </scroll-view>
+                  </view>
+                </view>
+              </scroll-view>
             </view>
-            <view class="tabBar--home-tabBar-item">
-              <view class="tabBar--home-tabBar-item-icon" style="background-color: #83bef0;">
-                <i class="tabBar--iconfont tabBar--icon-24gf-play sk-pseudo sk-pseudo-circle"></i>
-              </view>
-              <text class="sk-transparent sk-text-14-2857-925 sk-text">精选视频</text>
-            </view>
-            <view class="tabBar--home-tabBar-item">
-              <view class="tabBar--home-tabBar-item-icon" style="background-color: #e88b6c;">
-                <i class="tabBar--iconfont tabBar--icon-remenx sk-pseudo sk-pseudo-circle"></i>
-              </view>
-              <text class="sk-transparent sk-text-14-2857-23 sk-text">热门歌曲</text>
-            </view>
-            <view class="tabBar--home-tabBar-item">
-              <view class="tabBar--home-tabBar-item-icon" style="background-color: #83bef0;">
-                <i class="tabBar--iconfont tabBar--icon-fenlei sk-pseudo sk-pseudo-circle"></i>
-              </view>
-              <text class="sk-transparent sk-text-14-2857-396 sk-text">分类</text>
-            </view>
-          </view>
-        </view>
-        <view is="components/sub-module/sub-module">
-          <view class="module--sub-module">
-            <view class="module--sm-header">
-              <text class="sk-transparent sk-text-14-2857-506 sk-text">热门歌手</text>
-              <view class="module--sm-header-more">
-                <text class="sk-transparent sk-text-10-0000-816 sk-text">更多</text>
-                <i class="module--iconfont module--icon-xiangyou sk-pseudo sk-pseudo-circle"></i>
-              </view>
-            </view>
-            <scroll-view scroll-x="true">
-              <view class="home-container">
-                <view class="singer-template" data-id="3684" data-name="林俊杰">
-                  <image class="sk-image"></image>
-                  <text class="sk-transparent sk-text-14-2857-269 sk-text" style="background-position-x: 50%;">林俊杰</text>
-                </view>
-                <view class="singer-template" data-id="2116" data-name="陈奕迅">
-                  <image class="sk-image"></image>
-                  <text class="sk-transparent sk-text-14-2857-764 sk-text" style="background-position-x: 50%;">陈奕迅</text>
-                </view>
-                <view class="singer-template" data-id="29051613" data-name="郑润泽">
-                  <image class="sk-image"></image>
-                  <text class="sk-transparent sk-text-14-2857-875 sk-text" style="background-position-x: 50%;">郑润泽</text>
-                </view>
-                <view class="singer-template" data-id="5781" data-name="薛之谦">
-                  <image class="sk-image"></image>
-                  <text class="sk-transparent sk-text-14-2857-559 sk-text" style="background-position-x: 50%;">薛之谦</text>
-                </view>
-                <view class="singer-template" data-id="7763" data-name="G.E.M.邓紫棋">
-                  <image class="sk-image"></image>
-                  <text class="sk-transparent sk-text-14-2857-977 sk-text" style="background-position-x: 50%;">G.E.M.邓紫棋</text>
-                </view>
-                <view class="singer-template" data-id="31376161" data-name="颜人中">
-                  <image class="sk-image"></image>
-                  <text class="sk-transparent sk-text-14-2857-89 sk-text" style="background-position-x: 50%;">颜人中</text>
-                </view>
-                <view class="singer-template" data-id="13193" data-name="五月天">
-                  <image class="sk-image"></image>
-                  <text class="sk-transparent sk-text-14-2857-931 sk-text" style="background-position-x: 50%;">五月天</text>
-                </view>
-                <view class="singer-template" data-id="12138269" data-name="毛不易">
-                  <image class="sk-image"></image>
-                  <text class="sk-transparent sk-text-14-2857-36 sk-text" style="background-position-x: 50%;">毛不易</text>
-                </view>
-                <view class="singer-template" data-id="6472" data-name="张杰">
-                  <image class="sk-image"></image>
-                  <text class="sk-transparent sk-text-14-2857-936 sk-text" style="background-position-x: 50%;">张杰</text>
-                </view>
-              </view>
-            </scroll-view>
+            <view class="banner--sk-loading-spinner"></view>
           </view>
         </view>
       </scroll-view>
