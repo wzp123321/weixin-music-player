@@ -7,4 +7,10 @@
   .sc-empty {
     flex: auto;
   }
+
+  .sc-container{
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

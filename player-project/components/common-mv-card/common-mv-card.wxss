@@ -40,7 +40,7 @@
 
   position: absolute;
   left: 0;
-  top: 150rpx;
+  top: 140rpx;
 }
 
 .common-mv-card .cmc-info .cmc-info-count {

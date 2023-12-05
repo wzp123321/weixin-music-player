@@ -1,3 +1,6 @@
+<!-- 模板 -->
+<import src="../../../../template/singer-template/singer-template.wxml" />
+
 <view class="search-content">
   <van-tabs v-model:active="type" bind:change="handleTabChange">
     <van-tab wx:for="{{COMMON_SEARCH_TYPES}}" wx:for-item="item" wx:for-index="idx" wx:key="id" title="{{item.label}}" name="{{item.value}}"></van-tab>
@@ -7,5 +10,21 @@
   <!-- 缺省 -->
   <view class="sc-empty">
     <common-search-empty wx:if="{{!loading&&(!dataList||dataList.length ===0)}}"></common-search-empty>
+  </view>
+  <!-- 歌手 -->
+  <view class="sc-container" wx:if="{{!loading&&dataList.length !==0&&type===100}}">
+    <van-row gutter="12">
+      <van-col wx:for="{{dataList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="8">
+        <template is="singerTemp" data="{{...item}}"></template>
+      </van-col>
+    </van-row>
+  </view>
+  <!-- mv -->
+  <view class="sc-container" wx:if="{{!loading&&dataList.length !==0&&type===1004}}">
+    <van-row gutter="24">
+      <van-col wx:for="{{dataList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="12">
+        <common-mv-card mvInfo="{{item}}"></common-mv-card>
+      </van-col>
+    </van-row>
   </view>
 </view>

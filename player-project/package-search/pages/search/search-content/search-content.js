@@ -57,6 +57,29 @@ Component({
           case 1:
             list = res.data.result.songs
             break;
+          case 100:
+            list = res.data.result.artists?.map(item => ({
+              name: item.name,
+              imageUrl: item.img1v1Url,
+              id: item.id,
+              type: 'singer'
+            }))
+            break;
+          case 1004:
+            list = res.data?.result?.mvs?.map(item => ({
+              id: item?.id,
+              artistName: item?.artistName,
+              artistId: item.artistId,
+              duration: item.duration,
+              picUrl: item.cover,
+              playCount: item.playCount,
+              name: item.name,
+              copywriter: item?.copywriter ?? ''
+            }))
+            break;
+          case 1014:
+            list = res.data?.result?.videos;
+            break
         }
         this.setData({
           type,
@@ -70,7 +93,24 @@ Component({
         })
       }
     },
+    /**
+     * 页面跳转
+     */
+    handlePageTo: function (event) {
+      const {
+        id,
+        name,
+        type
+      } = event.currentTarget.dataset
+      switch (type) {
+        case 'singer':
+          wx.navigateTo({
+            url: `/package-music/pages/singer-detail/singer-detail?id=${id}&name=${name}`,
+          })
+          break;
+      }
 
+    },
   },
   lifetimes: {
     ready() {

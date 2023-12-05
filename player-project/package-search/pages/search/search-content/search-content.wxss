@@ -1,3 +1,4 @@
+@import "../../../../template/singer-template/singer-template.wxss";
 .search-content {
   width: 100%;
   height: 100%;
@@ -7,4 +8,10 @@
 
 .search-content .sc-empty {
   flex: auto;
+}
+
+.search-content .sc-container {
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
