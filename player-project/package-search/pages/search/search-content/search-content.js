@@ -50,7 +50,7 @@ Component({
       try {
         let list = [];
         const res = await sendRequest(COMMON_REQUEST_PATH.搜索.搜索, 'GET', {
-          keywords: '兰',
+          keywords: '兰亭序',
           type: type
         })
         switch (type) {

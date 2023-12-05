@@ -50,6 +50,9 @@ Page({
    * 搜索建议
    */
   async querySuggestList() {
+    if(!this.data.searchLabel){
+      return
+    }
     const res = await sendRequest(COMMON_REQUEST_PATH.搜索.搜索建议, 'GET', {
       keywords: this.data.searchLabel,
       type: 'mobile'

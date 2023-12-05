@@ -8,4 +8,5 @@
   <view class="sc-empty">
     <common-search-empty wx:if="{{!loading&&(!dataList||dataList.length ===0)}}"></common-search-empty>
   </view>
+  <common-music-item wx:for="{{dataList}}" wx:for-item="item" wx:for-index="index" wx:key="index" musicInfo="{{item}}"></common-music-item>
 </view>

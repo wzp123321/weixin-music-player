@@ -69,7 +69,8 @@
     "common-mv-card": "components/common-mv-card/common-mv-card",
     "common-comment-item": "components/common-comment-item/common-comment-item",
     "common-nav-bar": "components/common-nav-bar/common-nav-bar",
-    "common-loading": "components/common-loading/common-loading"
+    "common-loading": "components/common-loading/common-loading",
+    "common-music-item": "components/common-music-item/common-music-item"
   },
   "lazyCodeLoading": "requiredComponents",
   "window": {
