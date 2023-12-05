@@ -1,6 +1,6 @@
 <view class="search-suggest">
-  <view class="search-suggest-item" wx:for="{{suggestList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" bind:tap="handleSearch" data-label="{{item.keyword}}">
+  <view class="ss-item" wx:for="{{suggestList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" bind:tap="handleSearch" data-label="{{item.keyword}}">
     <i class="iconfont icon-sousuo"></i>
-    <view class="search-suggest-item-content">{{item.keyword}}</view>
+    <view class="ss-item-content">{{item.keyword}}</view>
   </view>
 </view>

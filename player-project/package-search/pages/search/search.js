@@ -12,8 +12,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    searchLabel: '', // 关键词
-    searchFlag: false, // 是否处于搜索
+    placeholder: '',
+    searchLabel: '兰', // 关键词
+    searchFlag: true, // 是否处于搜索
     inputFlag: false, // 输入提示状态
     suggestList: [], // 搜索建议列表
   },
@@ -65,7 +66,8 @@ Page({
   async queryDefaultKeyword() {
     const res = await sendRequest(COMMON_REQUEST_PATH.搜索.默认搜索关键词, 'GET')
     this.setData({
-      searchLabel: res.data.data.showKeyword
+      searchLabel: '',
+      placeholder: res.data.data.showKeyword
     })
   },
   /**

@@ -4,7 +4,9 @@ import {
 } from '../../utils/index'
 
 Component({
-
+  options: {
+    addGlobalClass: true
+  },
   /**
    * 组件的属性列表
    */
@@ -27,7 +29,7 @@ Component({
     /**
      * 跳转详情
      */
-    handlePageTo(){
+    handlePageTo() {
       wx.navigateTo({
         url: `/package-music/pages/mv-detail/mv-detail?id=${this.data.mvInfo.id}`,
       })

@@ -1,12 +1,10 @@
-@import "../../../../assets/iconfont/iconfont.wxss" ;
-
 .search-suggest {
   display: flex;
   flex-direction: column;
   gap: 24rpx;
 }
 
-.search-suggest .search-suggest-item {
+.search-suggest .ss-item {
   display: flex;
   align-items: center;
   gap: 32rpx;
@@ -15,10 +13,10 @@
   color: var(--music-color-font-primary);
 }
 
-.search-suggest .search-suggest-item .iconfont {
+.search-suggest .ss-item .iconfont {
   font-size: 32rpx;
 }
 
-.search-suggest .search-suggest-item .search-suggest-item-content {
+.search-suggest .ss-item .ss-item-content {
   font-size: 28rpx;
 }

@@ -1,6 +1,8 @@
 // components/common-nav-bar/common-nav-bar.js
 Component({
-
+  options: {
+    addGlobalClass: true
+  },
   /**
    * 组件的属性列表
    */

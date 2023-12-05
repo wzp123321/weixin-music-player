@@ -17,12 +17,12 @@
 -->
 <template name="skeleton">
   <view class="sk-container">
-    <view is="components/page-container/page-container" class="home common-has-tabbar">
+    <view is="components/common-page-container/common-page-container" class="home common-has-tabbar">
       <scroll-view enable-flex="true" scroll-y="true" style="height: 100%;display: flex; flex-direction: column;">
         <view is="pages/home/home-banner/home-banner">
           <view class="banner--sk-container">
             <view class="banner--home">
-              <scroll-view class="banner--container--page-container" scroll-y="true">
+              <scroll-view class="banner--container--common-page-container" scroll-y="true">
                 <view></view>
                 <view>
                   <view class="banner--tabBar--home-tabBar">
@@ -53,7 +53,7 @@
                   </view>
                 </view>
                 <view>
-                  <view class="banner--module--sub-module">
+                  <view class="banner--module--common-sub-module">
                     <view class="banner--module--sm-header">
                       <text class="banner--sk-transparent banner--sk-text-14-2857-506 banner--sk-text sk-transparent sk-image">热门歌手</text>
                       <view class="banner--module--sm-header-more">

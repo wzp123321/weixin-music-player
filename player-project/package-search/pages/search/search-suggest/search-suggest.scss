@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 24rpx;
 
-  .search-suggest-item {
+  .ss-item {
     display: flex;
     align-items: center;
     gap: 32rpx;
@@ -16,7 +16,7 @@
       font-size: 32rpx;
     }
 
-    .search-suggest-item-content {
+    .ss-item-content {
       font-size: 28rpx;
     }
   }

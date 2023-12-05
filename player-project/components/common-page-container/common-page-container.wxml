@@ -1,0 +1,3 @@
+<scroll-view style="height: 100%;display: flex; flex-direction: column;" scroll-y="{{true}}" class="common-page-container" enable-flex="true">
+  <slot></slot>
+</scroll-view>

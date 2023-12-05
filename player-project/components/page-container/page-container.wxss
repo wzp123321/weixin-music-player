@@ -1,4 +1,0 @@
-/* components/page-container/page-container.wxss */
-.page-container {
-  width: 100%;
-}

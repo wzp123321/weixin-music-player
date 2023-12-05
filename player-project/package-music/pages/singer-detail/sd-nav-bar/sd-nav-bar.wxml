@@ -1,7 +1,11 @@
-  <view class="sd-nav-bar">
+<view class="sd-nav-bar">
+  <view class="sd-nav-bar-header">
     <view class="snb-item {{selectedCode === item.code ? 'is-selected' : ''}}" wx:for="{{dataList}}" wx:for-item="item" wx:for-index="idx" wx:key="code" bind:tap="handleSelect" data-code="{{item.code}}">
       <view class="snb-item-name">{{item.name}}</view>
       <view class="snb-item-count" wx:if="{{item.count>0}}">/{{item.count}}</view>
     </view>
   </view>
-  <slot data-code="{{selectedCode}}"></slot>
+  <view class="sd-nav-bar-body">
+    <slot data-code="{{selectedCode}}"></slot>
+  </view>
+</view>

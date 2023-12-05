@@ -16,7 +16,7 @@ page {
   height: 100%;
 
   /* 主题 */
-  --music-color-primary: #f53f3f;
+  --music-color-primary: #ffe12c;
   --music-color-default: #fff;
   --music-color-gray: #F2F3F5;
   --music-color-primary-btn: #0e6dfa;

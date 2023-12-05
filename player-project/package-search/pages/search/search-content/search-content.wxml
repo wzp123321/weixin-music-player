@@ -1,0 +1,11 @@
+<view class="search-content">
+  <van-tabs v-model:active="type" bind:change="handleTabChange">
+    <van-tab wx:for="{{COMMON_SEARCH_TYPES}}" wx:for-item="item" wx:for-index="idx" wx:key="id" title="{{item.label}}" name="{{item.value}}"></van-tab>
+  </van-tabs>
+  <!-- loading -->
+  <common-loading wx:if="{{loading}}"></common-loading>
+  <!-- 缺省 -->
+  <view class="sc-empty">
+    <common-search-empty wx:if="{{!loading&&(!dataList||dataList.length ===0)}}"></common-search-empty>
+  </view>
+</view>

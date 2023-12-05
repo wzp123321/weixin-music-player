@@ -1,5 +1,0 @@
-<view class="search-nav-bar">
-  <van-tabs v-model:active="type">
-    <van-tab wx:for="{{COMMON_SEARCH_TYPES}}" wx:for-item="item" wx:for-index="idx" wx:key="id" title="{{item.label}}" name="{{item.value}}"></van-tab>
-  </van-tabs>
-</view>

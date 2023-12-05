@@ -1,6 +1,8 @@
 // package-search/pages/search/search-suggest/search-suggest.js
 Component({
-
+  options: {
+    addGlobalClass: true
+  },
   /**
    * 组件的属性列表
    */
@@ -19,7 +21,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    handleSearch(event){
+    handleSearch(event) {
       this.triggerEvent('search', event.currentTarget.dataset.label)
     }
   }

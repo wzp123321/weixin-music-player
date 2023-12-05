@@ -2,7 +2,7 @@
 <!-- 模板 -->
 <import src="../../template/singer-template/singer-template.wxml" />
 
-<page-container class="home common-has-tabbar">
+<common-page-container class="home common-has-tabbar">
   <!-- banner -->
   <home-banner></home-banner>
   <view class="home-space"></view>
@@ -10,30 +10,30 @@
   <home-tabBar></home-tabBar>
   <view class="home-space"></view>
   <!-- 热门歌手 -->
-  <sub-module subTitle="热门歌手">
+  <common-sub-module subTitle="热门歌手">
     <van-row gutter="12">
       <van-col wx:for="{{singerList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="8">
         <template is="singerTemp" data="{{...item}}"></template>
       </van-col>
     </van-row>
-  </sub-module>
+  </common-sub-module>
   <view class="home-space"></view>
   <!-- 每日推荐 -->
-  <sub-module subTitle="每日推荐">
+  <common-sub-module subTitle="每日推荐">
     <van-row gutter="12">
       <van-col wx:for="{{recommendMusicList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="8">
         <template is="singerTemp" data="{{...item}}">
         </template>
       </van-col>
     </van-row>
-  </sub-module>
+  </common-sub-module>
   <view class="home-space"></view>
   <!-- 推荐MV -->
-  <sub-module subTitle="推荐MV">
+  <common-sub-module subTitle="推荐MV">
     <van-row gutter="12">
       <van-col wx:for="{{mvList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="12">
         <common-mv-card mvInfo="{{item}}"></common-mv-card>
       </van-col>
     </van-row>
-  </sub-module>
-</page-container>
+  </common-sub-module>
+</common-page-container>

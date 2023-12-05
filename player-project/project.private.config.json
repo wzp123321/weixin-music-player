@@ -3,6 +3,7 @@
     "projectname": "player-project",
     "setting": {
         "compileHotReLoad": true,
-        "autoAudits": true
+        "autoAudits": false,
+        "urlCheck": false
     }
 }

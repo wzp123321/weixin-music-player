@@ -1,7 +1,7 @@
 <!-- 引入wxs -->
 <wxs src="../../../utils/utils.wxs" module="utilWxs"></wxs>
 
-<page-container class="mv-detail">
+<common-page-container class="mv-detail">
   <view class="md-detail-main">
     <video src="{{url}}" preload="auto" danmu-btn="true" enable-danmu="true" page-gesture="true" show-mute-btn="true" autoplay="true" controls="true" muted="true" title="{{mvDetail.name}}" play-btn-position="center" :enable-play-gesture="true"></video>
   </view>
@@ -31,4 +31,4 @@
       </common-comment-item>
     </view>
   </view>
-</page-container>
+</common-page-container>

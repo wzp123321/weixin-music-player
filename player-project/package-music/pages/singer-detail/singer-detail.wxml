@@ -1,4 +1,4 @@
-<page-container>
+<common-page-container>
   <view class="singer-detail" style="background-image: url({{singerInfo.picUrl}});">
     <common-nav-bar title="{{singerInfo.name}}" transparentFlag="{{true}}"></common-nav-bar>
     <!-- 详情 -->
@@ -26,4 +26,4 @@
     </view>
   </view>
 
-</page-container>
+</common-page-container>

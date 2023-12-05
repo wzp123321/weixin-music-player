@@ -4,8 +4,5 @@ App({
   globalData: {
     coverImage: 'https://gd-hbimg.huaban.com/8cda14754def92008d5c8ea9c5157a02334803dd4bd6-YHd5LH_fw658webp',
     rotateFlag: false
-  },
-  onLaunch() {
-   
   }
 })

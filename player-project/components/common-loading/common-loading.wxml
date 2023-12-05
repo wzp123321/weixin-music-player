@@ -1,0 +1,11 @@
+<view class="common-loading">
+  <view class="sk-cube sk-cube1"></view>
+  <view class="sk-cube sk-cube2"></view>
+  <view class="sk-cube sk-cube3"></view>
+  <view class="sk-cube sk-cube4"></view>
+  <view class="sk-cube sk-cube5"></view>
+  <view class="sk-cube sk-cube6"></view>
+  <view class="sk-cube sk-cube7"></view>
+  <view class="sk-cube sk-cube8"></view>
+  <view class="sk-cube sk-cube9"></view>
+</view>

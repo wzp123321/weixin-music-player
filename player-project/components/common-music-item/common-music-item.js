@@ -1,4 +1,4 @@
-// components/music-player-panel.js
+// components/common-music-item/common-music-item.js
 Component({
 
     /**

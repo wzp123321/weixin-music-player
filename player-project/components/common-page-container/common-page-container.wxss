@@ -1,0 +1,4 @@
+/* components/common-page-container/common-page-container.wxss */
+.common-page-container {
+  width: 100%;
+}

@@ -1,4 +1,4 @@
-<page-container id="album-detail">
+<common-page-container id="album-detail">
   <view class="album-detail--left">
     <image src="albumDetail.info.picUrl" alt="" />
     <view class="mt48 mb16">专辑简介</view>
@@ -53,4 +53,4 @@
       </tbody>
     </table>
   </view>
-</page-container>
+</common-page-container>

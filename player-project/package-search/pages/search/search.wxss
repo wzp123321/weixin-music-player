@@ -4,6 +4,8 @@
   padding: 0 var(--music-space-32);
   box-sizing: border-box;
   background-color: var(--music-color-default);
+  display: flex;
+  flex-direction: column;
 }
 
 .search .van-search {
@@ -18,4 +20,9 @@
 
 .search .van-search .van-search__action-button {
   color: var(--music-color-info);
+}
+
+
+.search .search-body{
+  flex: auto;
 }

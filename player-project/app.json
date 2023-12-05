@@ -60,15 +60,16 @@
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index",
     "van-search": "@vant/weapp/search/index",
-    "page-container": "components/page-container/page-container",
-    "sub-module": "components/sub-module/sub-module",
+    "common-page-container": "components/common-page-container/common-page-container",
+    "common-sub-module": "components/common-sub-module/common-sub-module",
     "common-data-empty": "components/common-data-empty/common-data-empty",
     "common-load-error": "components/common-load-error/common-load-error",
     "common-network-error": "components/common-network-error/common-network-error",
     "common-search-empty": "components/common-search-empty/common-search-empty",
     "common-mv-card": "components/common-mv-card/common-mv-card",
     "common-comment-item": "components/common-comment-item/common-comment-item",
-    "common-nav-bar": "components/common-nav-bar/common-nav-bar"
+    "common-nav-bar": "components/common-nav-bar/common-nav-bar",
+    "common-loading": "components/common-loading/common-loading"
   },
   "lazyCodeLoading": "requiredComponents",
   "window": {

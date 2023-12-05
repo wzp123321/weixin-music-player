@@ -1,2 +1,2 @@
 <!--package-singer/pages/singer-rank/singer-rank.wxml-->
-<page-container>package-singer/pages/singer-rank/singer-rank.wxml</page-container>
+<common-page-container>package-singer/pages/singer-rank/singer-rank.wxml</common-page-container>

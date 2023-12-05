@@ -1,5 +1,3 @@
-@import '../../../assets/iconfont/iconfont.wxss';
-
 .home-tabBar {
   display: flex;
   justify-content: space-between;

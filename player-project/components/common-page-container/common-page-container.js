@@ -1,6 +1,6 @@
-// components/page-container/page-container.js
+// components/common-page-container/common-page-container.js
 Component({
-  externalClasses: ['page-container'],
+  externalClasses: ['common-page-container'],
   /**
    * 组件的属性列表
    */

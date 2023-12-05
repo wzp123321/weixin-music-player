@@ -1,6 +1,8 @@
 // pages/home/home-tab-bar/home-tab-bar.js
 Component({
-
+  options: {
+    addGlobalClass: true
+  },
   /**
    * 组件的属性列表
    */

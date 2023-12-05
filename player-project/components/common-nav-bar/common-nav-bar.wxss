@@ -1,5 +1,3 @@
-@import '../../assets/iconfont/iconfont.wxss';
-
 .iconfont.icon-xiangzuo{
   color: var(--music-color-gray);
 }

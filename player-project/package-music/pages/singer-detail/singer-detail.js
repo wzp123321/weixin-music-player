@@ -7,6 +7,9 @@ import {
 } from '../../../config/path'
 
 Page({
+  options: {
+    addGlobalClass: true
+  },
   /**
    * 页面的初始数据
    */
