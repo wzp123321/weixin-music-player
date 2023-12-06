@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "package-search/pages/search/search",
+  "entryPagePath": "package-music/pages/singer-detail/singer-detail",
   "pages": [
     "pages/home/home",
     "pages/user/user"

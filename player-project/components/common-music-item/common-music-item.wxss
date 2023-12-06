@@ -1,12 +1,40 @@
 .common-music-item {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 16rpx;
-  padding: 24rpx;
+  padding: 24rpx 0;
   width: 100%;
+  overflow: hidden;
   box-sizing: border-box;
+  border-bottom: 1rpx solid var(--music-color-font-border);
 }
 
 .common-music-item .cmi-detail {
   flex: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.common-music-item .cmi-detail .cmi-detail-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 32rpx;
+}
+
+.common-music-item .cmi-detail .cmi-detail-artist {
+  font-size: 24rpx;
+}
+
+.common-music-item .cmi-btn {
+  display: flex;
+  gap: 24rpx;
+}
+
+.common-music-item .cmi-btn .iconfont {
+  font-size: 36rpx;
 }

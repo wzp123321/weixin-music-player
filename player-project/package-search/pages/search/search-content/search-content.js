@@ -75,7 +75,7 @@ Component({
               playCount: item.playCount,
               name: item.name,
               copywriter: item?.copywriter ?? ''
-            }))
+            })) ?? []
             break;
           case 1014:
             list = res.data?.result?.videos;
@@ -109,7 +109,6 @@ Component({
           })
           break;
       }
-
     },
   },
   lifetimes: {

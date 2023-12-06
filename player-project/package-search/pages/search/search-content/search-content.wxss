@@ -1,8 +1,11 @@
+@import "../../../../template/singer-template/singer-template.wxss";
+
 .search-content {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .search-content .sc-empty {
@@ -12,5 +15,9 @@
 .search-content .sc-container {
   flex: auto;
   display: flex;
+  flex-direction: column;
+}
+
+.search-content .sc-container.is-wrap {
   flex-wrap: wrap;
 }

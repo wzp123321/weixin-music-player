@@ -16,7 +16,7 @@
     <common-music-item wx:for="{{dataList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" musicInfo="{{item}}"></common-music-item>
   </view>
   <!-- 歌手 -->
-  <view class="sc-container" wx:if="{{!loading&&dataList.length !==0&&type===100}}">
+  <view class="sc-container is-wrap" wx:if="{{!loading&&dataList.length !==0&&type===100}}">
     <van-row gutter="12">
       <van-col wx:for="{{dataList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="8">
         <template is="singerTemp" data="{{...item}}"></template>
@@ -24,7 +24,7 @@
     </van-row>
   </view>
   <!-- mv -->
-  <view class="sc-container" wx:if="{{!loading&&dataList.length !==0&&type===1004}}">
+  <view class="sc-container is-wrap" wx:if="{{!loading&&dataList.length !==0&&type===1004}}">
     <van-row gutter="24">
       <van-col wx:for="{{dataList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" span="12">
         <common-mv-card mvInfo="{{item}}"></common-mv-card>

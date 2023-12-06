@@ -2,9 +2,9 @@
   width: 100%;
   background-color: var(--music-color-default);
   padding: var(--music-space-32);
-}
 
-.sd-main .sd-main-container {
-  border-radius: 16rpx;
-  background-color: var(--music-fill-color);
+  .sd-main-container{
+    border-radius: 16rpx;
+    background-color: var(--music-fill-color);
+  }
 }
