@@ -10,20 +10,24 @@
             <van-image src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
             <view>{{ singerInfo.name }}</view>
           </view>
-          <view class="sd-container-header-info-attention">
-            关注
+          <view class="sd-container-header-info-btn">
+            <view class="sd-container-header-info-btn-attention">
+              关注
+            </view>
+            <view class="sd-container-header-info-btn-attention">
+              寻找相似
+            </view>
           </view>
         </view>
       </view>
       <!-- nav-bar -->
-      <sd-nav-bar dataList="{{navList}}" selectedCode="{{selectedCode}}" bind:change="handleCodeChange">
+      <sd-nav-bar dataList="{{navList}}" selectedCode="{{selectedCode}}" bind:select="handleCodeChange">
         <!-- 主页 -->
-        <sd-main wx:if="{{selectedCode === '1'}}"></sd-main>
+        <sd-main wx:if="{{selectedCode === '1'}}" singerId="{{id}}"></sd-main>
       </sd-nav-bar>
     </view>
     <view class="sd-container" wx-if="{{loadErrorFlag && !loading}}">
       <common-load-error></common-load-error>
     </view>
   </view>
-
 </common-page-container>

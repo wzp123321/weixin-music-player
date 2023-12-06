@@ -9,7 +9,7 @@
 }
 
 .singer-detail .van-nav-bar {
-  background-color: var(--music-color-font-border);
+  background-color: transparent;
 }
 
 .singer-detail .van-nav-bar .van-nav-bar__title,
@@ -30,7 +30,7 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 480rpx;
+  height: 600rpx;
   background-color: var(--music-color-font-border);
 }
 
@@ -47,7 +47,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 var(--music-space-40);
-  margin-top: var(--music-space-200);
+  margin-top: 256rpx;
 }
 
 .singer-detail .sd-container-header .sd-container-header-info .sd-container-header-info-name {
@@ -58,16 +58,23 @@
   gap: var(--music-space-12);
 }
 
+.singer-detail .sd-container-header .sd-container-header-info .sd-container-header-info-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16rpx;
+  margin-top: 24rpx;
+}
 
-.singer-detail .sd-container-header .sd-container-header-info .sd-container-header-info-attention {
-  width: var(--music-space-100);
+.singer-detail .sd-container-header .sd-container-header-info .sd-container-header-info-btn-attention {
+  width: fit-content;
   height: var(--music-space-44);
   line-height: var(--music-space-44);
   border-radius: var(--music-space-20);
   font-size: var(--music-font-24);
   background-color: var(--music-color-font-secondary);
-  margin-top: var(--music-space-32);
   color: var(--music-color-gray);
+  padding: 0 20rpx;
 }
 
 .singer-detail .sd-container-header .sd-container-header-achievement {

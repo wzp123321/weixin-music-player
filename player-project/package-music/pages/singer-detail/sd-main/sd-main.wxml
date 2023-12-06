@@ -1,6 +1,17 @@
 <view class="sd-main">
   <!-- 基本信息 -->
   <view class="sd-main-container">
+    <!-- 基本信息 -->
     <view class="sd-main-container-title">基本信息</view>
+    <view class="sd-main-container-desc">
+      {{singerInfo.briefDesc}}
+    </view>
+  </view>
+  <!-- 其他信息 -->
+  <view class="sd-main-container" wx:for="{{singerInfo.introduction}}" wx:for-item="item" wx:for-index="idx" wx:key="code">
+    <view class="sd-main-container-title">{{item.ti}}</view>
+    <view class="sd-main-container-desc">
+      {{item.txt}}
+    </view>
   </view>
 </view>

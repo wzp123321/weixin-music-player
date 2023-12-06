@@ -83,11 +83,11 @@ Page({
   },
   /**
    * 切换tab
-   * @param {*} code 
+   * @param {*} event 
    */
-  handleCodeChange(code) {
+  handleCodeChange(event) {
     this.setData({
-      selectedCode: code
+      selectedCode: event.detail.currentTarget.dataset.code
     })
   },
   /**
@@ -97,7 +97,6 @@ Page({
     this.setData({
       // id: options.id,
       id: 2116,
-      name: options.name,
       loadErrorFlag: false
     });
     this.querySingerDetail();

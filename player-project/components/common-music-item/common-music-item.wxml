@@ -1,5 +1,5 @@
 <view class="common-music-item">
-  <van-image class="cmi-cover" width="48" height="48" radius="8" src="{{musicInfo.artists[0].img1v1Url}}" />
+  <!-- <van-image class="cmi-cover" width="48" height="48" radius="8" src="{{musicInfo.artists[0].img1v1Url}}" /> -->
   <view class="cmi-detail">
     <!-- 标题 -->
     <view class="cmi-detail-title">{{musicInfo.name}}</view>

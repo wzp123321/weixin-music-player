@@ -16,7 +16,7 @@ page {
   height: 100%;
 
   /* 主题 */
-  --music-color-primary: #ffe12c;
+  --music-color-primary: #f5222d;
   --music-color-default: #fff;
   --music-color-gray: #F2F3F5;
   --music-color-primary-btn: #0e6dfa;
@@ -34,7 +34,6 @@ page {
   --music-color-warning-light-5: #fcc58a;
   --music-color-warning-light-8: #fee8d0;
   --music-color-warning-light-9: #fff4e8;
-  --music-color-danger: #f5222d;
   --music-color-danger-dark-2: #c41b24;
   --music-color-danger-light-5: #f99095;
   --music-color-danger-light-8: #fdd3d5;
