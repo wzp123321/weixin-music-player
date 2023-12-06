@@ -22,7 +22,6 @@
   color: var(--music-color-info);
 }
 
-
 .search .search-body{
   flex: auto;
 }

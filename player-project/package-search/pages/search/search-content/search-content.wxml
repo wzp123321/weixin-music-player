@@ -11,6 +11,10 @@
   <view class="sc-empty">
     <common-search-empty wx:if="{{!loading&&(!dataList||dataList.length ===0)}}"></common-search-empty>
   </view>
+  <!-- 单曲 -->
+  <view class="sc-container" wx:if="{{!loading&&dataList.length !==0&&type===1}}">
+    <common-music-item wx:for="{{dataList}}" wx:for-item="item" wx:for-index="idx" wx:key="id" musicInfo="{{item}}"></common-music-item>
+  </view>
   <!-- 歌手 -->
   <view class="sc-container" wx:if="{{!loading&&dataList.length !==0&&type===100}}">
     <van-row gutter="12">
