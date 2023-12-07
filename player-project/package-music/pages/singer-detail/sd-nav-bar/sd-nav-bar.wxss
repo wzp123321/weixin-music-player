@@ -10,7 +10,7 @@
   align-items: center;
   height: var(--music-space-96);
   background-color: var(--music-color-default);
-  border-bottom: 1rpx solid var(--music-color-font-divider);
+  /* border-bottom: 1rpx solid var(--music-color-font-divider); */
 }
 
 .sd-nav-bar .sd-nav-bar-header .snb-item {
@@ -28,14 +28,15 @@
 .sd-nav-bar .sd-nav-bar-header .snb-item.is-selected::after {
   content: '';
   display: inline-block;
-  width: 16rpx;
-  height: 16rpx;
-  border-radius: 32rpx;
+  width: 36rpx;
+  height: 8rpx;
+  border-radius: 56rpx;
   background-color: var(--music-color-primary);
   position: absolute;
   bottom: 8rpx;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 233ms;
 }
 
 .sd-nav-bar .sd-nav-bar-header .snb-item.is-selected .snb-item-name,

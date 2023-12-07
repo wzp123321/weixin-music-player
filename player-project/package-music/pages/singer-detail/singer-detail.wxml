@@ -3,21 +3,15 @@
     <common-nav-bar title="{{singerInfo.name}}" transparentFlag="{{true}}"></common-nav-bar>
     <!-- 详情 -->
     <view class="sd-container" wx-if="{{!loadErrorFlag && !loading}}">
-      <!-- 头部 -->
-      <view class="sd-container-header">
-        <view class="sd-container-header-info">
-          <view class="sd-container-header-info-name">
-            <van-image src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
-            <view>{{ singerInfo.name }}</view>
-          </view>
-          <view class="sd-container-header-info-btn">
-            <view class="sd-container-header-info-btn-attention">
-              关注
-            </view>
-            <view class="sd-container-header-info-btn-attention">
-              寻找相似
-            </view>
-          </view>
+      <!-- 卡片 -->
+      <view class="sd-container-card">
+        <van-image class="sd-container-card-image" src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
+        <view class="sd-container-card-name">{{ singerInfo.name }}</view>
+        <view class="sd-container-card-btn attention">
+          关注
+        </view>
+        <view class="sd-container-card-btn">
+          寻找相似
         </view>
       </view>
       <!-- nav-bar -->
