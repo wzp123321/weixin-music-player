@@ -1,68 +1,87 @@
 /* pages/singer-detail/singer-detail.wxss */
 .singer-detail {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
 }
 
 .singer-detail .van-nav-bar {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .singer-detail .van-nav-bar .van-nav-bar__title,
 .iconfont.icon-xiangzuo {
-  color: var(--music-color-gray) !important;
+    color: var(--music-color-gray) !important;
 }
 
 .singer-detail .sd-container {
-  width: 100%;
-  flex: auto;
+    width: 100%;
+    flex: auto;
 }
 
 .singer-detail .sd-container .sd-container-card {
-  position: relative;
-  background-color: var(--music-text-color-placeholder);
-  padding: 48rpx;
-  width: 440rpx;
-  border-radius: 16rpx;
-  margin: 480rpx auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16rpx;
+    position: relative;
+    background-color: var(--music-text-color-placeholder);
+    padding: 48rpx;
+    width: 580rpx;
+    border-radius: 16rpx;
+    margin: 480rpx auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16rpx;
 }
 
 .singer-detail .sd-container .sd-container-card .sd-container-card-image {
-  position: absolute;
-  left: 50%;
-  top: -40rpx;
-  transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -40rpx;
+    transform: translateX(-50%);
 }
 
 .singer-detail .sd-container .sd-container-card .sd-container-card-name {
-  display: flex;
-  flex-direction: column;
-  color: var(--music-color-default);
-  font-size: var(--music-font-40);
-  margin-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+    color: var(--music-color-default);
+    font-size: var(--music-font-40);
+    margin-top: 20rpx;
+}
+
+.singer-detail .sd-container .sd-container-card .sd-container-card-nick {
+    font-size: 24rpx;
+    color: var(--music-color-default);
 }
 
 .singer-detail .sd-container .sd-container-card .sd-container-card-btn {
-  width: fit-content;
-  height: var(--music-space-44);
-  line-height: var(--music-space-44);
-  border-radius: var(--music-space-20);
-  font-size: var(--music-font-24);
-  background-color: var(--music-color-font-secondary);
-  color: var(--music-color-gray);
-  padding: 0 20rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16rpx;
 }
 
-.singer-detail .sd-container .sd-container-card .sd-container-card-btn.attention{
-  background-color: var(--music-color-primary);
-  color: var(--music-rate-default);
+.singer-detail .sd-container .sd-container-card .sd-container-card-btn .is-btn{
+    width: fit-content;
+    height: var(--music-space-44);
+    line-height: var(--music-space-44);
+    border-radius: var(--music-space-20);
+    font-size: var(--music-font-24);
+    background-color: var(--music-color-font-secondary);
+    color: var(--music-color-gray);
+    padding: 0 20rpx;
+}
+
+.singer-detail .sd-container .sd-container-card .sd-container-card-btn .attention {
+    background-color: var(--music-color-primary);
+    color: var(--music-rate-default);
+    display: flex;
+    align-items: center;
+}
+
+.singer-detail .sd-container .sd-container-card .sd-container-card-btn .similarity{
+    border-radius: 50%;
+    padding: 0 10rpx;
 }

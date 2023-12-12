@@ -21,6 +21,7 @@ Page({
       briefDesc: '', // 简介
       img1v1Url: '', // 头像
       name: '', // 名字
+      nickName: '',
       picUrl: '', // 背景
       musicSize: 0, // 作品数
       mvSize: 0, // mv
@@ -64,6 +65,7 @@ Page({
             briefDesc: res?.data?.artist?.briefDesc,
             img1v1Url: res?.data?.artist?.img1v1Url,
             name: res?.data?.artist?.name,
+            nickName: res?.data?.artist?.alias?.join(','),
             picUrl: res?.data?.artist?.picUrl,
             mvSize: res?.data?.artist?.mvSize,
             musicSize: res?.data?.artist?.musicSize,

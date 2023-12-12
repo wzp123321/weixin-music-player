@@ -1,27 +1,31 @@
 <common-page-container>
-  <view class="singer-detail" style="background-image: url({{singerInfo.picUrl}});">
-    <common-nav-bar title="{{singerInfo.name}}" transparentFlag="{{true}}"></common-nav-bar>
-    <!-- 详情 -->
-    <view class="sd-container" wx-if="{{!loadErrorFlag && !loading}}">
-      <!-- 卡片 -->
-      <view class="sd-container-card">
-        <van-image class="sd-container-card-image" src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
-        <view class="sd-container-card-name">{{ singerInfo.name }}</view>
-        <view class="sd-container-card-btn attention">
-          关注
+    <view class="singer-detail" style="background-image: url({{singerInfo.picUrl}});">
+        <common-nav-bar title="{{singerInfo.name}}" transparentFlag="{{true}}"></common-nav-bar>
+        <!-- 详情 -->
+        <view class="sd-container" wx-if="{{!loadErrorFlag && !loading}}">
+            <!-- 卡片 -->
+            <view class="sd-container-card">
+                <van-image class="sd-container-card-image" src="{{singerInfo.picUrl}}" round width="48" height="48"></van-image>
+                <view class="sd-container-card-name">{{ singerInfo.name }}</view>
+                <view class="sd-container-card-nick">{{ singerInfo.nickName }}</view>
+                <view class="sd-container-card-btn">
+                    <view class="is-btn attention">
+                        <i class="iconfont icon-tianjia"></i>
+                        <view>关注</view>
+                    </view>
+                    <view class="is-btn similarity">
+                        <i class="icon-Down1"></i>
+                    </view>
+                </view>
+            </view>
+            <!-- nav-bar -->
+            <sd-nav-bar dataList="{{navList}}" selectedCode="{{selectedCode}}" bind:select="handleCodeChange">
+                <!-- 主页 -->
+                <sd-main wx:if="{{selectedCode === '1'}}" singerId="{{id}}"></sd-main>
+            </sd-nav-bar>
         </view>
-        <view class="sd-container-card-btn">
-          寻找相似
+        <view class="sd-container" wx-if="{{loadErrorFlag && !loading}}">
+            <common-load-error></common-load-error>
         </view>
-      </view>
-      <!-- nav-bar -->
-      <sd-nav-bar dataList="{{navList}}" selectedCode="{{selectedCode}}" bind:select="handleCodeChange">
-        <!-- 主页 -->
-        <sd-main wx:if="{{selectedCode === '1'}}" singerId="{{id}}"></sd-main>
-      </sd-nav-bar>
     </view>
-    <view class="sd-container" wx-if="{{loadErrorFlag && !loading}}">
-      <common-load-error></common-load-error>
-    </view>
-  </view>
 </common-page-container>
